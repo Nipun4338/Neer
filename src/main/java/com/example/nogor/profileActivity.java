@@ -2,21 +2,25 @@ package com.example.nogor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class profileActivity extends AppCompatActivity {
 
-    ImageView settings;
-    String user_address, user_name, user_email, user_phone, user_password;
+    ImageView settings, dp;
+    String user_address, user_name, user_email, user_phone, user_password, user_dp;
     Button postad, lookforad, lookforbuy, signout;
+    TextView name;
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
@@ -31,6 +35,8 @@ public class profileActivity extends AppCompatActivity {
         lookforad=findViewById(R.id.lookforad);
         lookforbuy=findViewById(R.id.lookforbuy);
         signout=findViewById(R.id.signout);
+        name=findViewById(R.id.textView6);
+        dp=findViewById(R.id.dp);
 
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
@@ -46,9 +52,15 @@ public class profileActivity extends AppCompatActivity {
                 intent.putExtra("email", user_email);
                 intent.putExtra("phone", user_phone);
                 intent.putExtra("password", user_password);
+                intent.putExtra("dp", user_dp);
                 startActivity(intent);
             }
         });
+        name.setText(user_name+"!");
+        if(user_dp.length()>0)
+        {
+            setimage(user_dp);
+        }
 
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +82,7 @@ public class profileActivity extends AppCompatActivity {
                 intent.putExtra("email", user_email);
                 intent.putExtra("phone", user_phone);
                 intent.putExtra("password", user_password);
+                intent.putExtra("dp", user_dp);
                 startActivity(intent);
             }
         });
@@ -97,5 +110,14 @@ public class profileActivity extends AppCompatActivity {
             user_email = intent.getStringExtra("email");
             user_phone = intent.getStringExtra("phone");
             user_password = intent.getStringExtra("password");
+            user_dp = intent.getStringExtra("dp");
+    }
+
+    public void setimage(String image)
+    {
+        //Picasso.with(ctx).load(image).into(image1);
+        Glide.with(profileActivity.this)
+                .load(image)
+                .into(dp);
     }
 }
