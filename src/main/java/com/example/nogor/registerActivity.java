@@ -82,6 +82,7 @@ public class registerActivity extends AppCompatActivity {
                     intent.putExtra("email", email1);
                     intent.putExtra("phone", phone);
                     intent.putExtra("password", password1);
+                    intent.putExtra("dp", "");
                     startActivity(intent);
                     finish();
                 }

@@ -134,7 +134,6 @@ public class post_an_add_2Activity extends AppCompatActivity {
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
-
             for(x=0; x<Imagelist.size(); x++)
             {
                 Uri individula_image=Imagelist.get(x);
@@ -146,6 +145,7 @@ public class post_an_add_2Activity extends AppCompatActivity {
                                 if(x==1)
                                 {
                                     String y=String.valueOf(x);
+                                    Toast.makeText(post_an_add_2Activity.this, "STOP!", Toast.LENGTH_SHORT).show();
                                     ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
@@ -178,11 +178,20 @@ public class post_an_add_2Activity extends AppCompatActivity {
                         });
             }
             progressDialog.dismiss();
-            btnUpload.setVisibility(View.GONE);
+            //btnUpload.setVisibility(View.GONE);
             Toast.makeText(post_an_add_2Activity.this, "Ad successfully added!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
             intent.putExtra("phone", user_phone);
-            startActivity(new Intent(post_an_add_2Activity.this, my_ads_Activity.class));
+            intent.putExtra("key", user_id);
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(post_an_add_2Activity.this, "Ad successfully added!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
+            intent.putExtra("phone", user_phone);
+            intent.putExtra("key", user_id);
+            startActivity(intent);
         }
     }
 }

@@ -6,13 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -20,26 +19,23 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-public class my_ads_Activity extends AppCompatActivity {
+public class all_ads_Activity extends AppCompatActivity {
 
     private RecyclerView myView;
     private DatabaseReference myReference;
 
-    String key1, user_phone;
-    Button edit_ad;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_ads_);
-        getuserdata();
+        setContentView(R.layout.activity_all_ads_);
 
-        myReference= FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad");
+        myReference= FirebaseDatabase.getInstance().getReference("users").child("ad");
         myReference.keepSynced(true);
 
-        myView=findViewById(R.id.myrecycleview);
+        myView=findViewById(R.id.myrecycleview1);
         myView.setHasFixedSize(true);
         myView.setLayoutManager(new LinearLayoutManager(this));
+
 
     }
 
@@ -47,10 +43,10 @@ public class my_ads_Activity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerAdapter<Blog, BlogViewHolder>firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<Blog, BlogViewHolder>
-                (Blog.class, R.layout.blog_row, BlogViewHolder.class, myReference) {
+        FirebaseRecyclerAdapter<Blog1, BlogViewHolder>firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<Blog1, BlogViewHolder>
+                (Blog1.class, R.layout.blog_rows1_layout, BlogViewHolder.class, myReference) {
             @Override
-            protected void populateViewHolder(BlogViewHolder viewHolder, Blog model, int position)
+            protected void populateViewHolder(BlogViewHolder viewHolder, Blog1 model, int position)
             {
                 viewHolder.setdistrictname(model.getDistrict());
                 viewHolder.setadditionaldetails(model.getDescribeHouse());
@@ -60,18 +56,6 @@ public class my_ads_Activity extends AppCompatActivity {
                 viewHolder.setsize(model.getSizeOfhouse());
                 viewHolder.setareaname(model.getAreaName());
                 viewHolder.setimage(getApplicationContext(), model.getImage());
-                final String key2=model.getKey();
-                final String user_phone=model.getUser_phone();
-
-                viewHolder.edit_ad.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(getApplicationContext(), edit_my_ad_Activity.class);
-                        intent.putExtra("key", key2);
-                        intent.putExtra("phone", user_phone);
-                        startActivity(intent);
-                    }
-                });
             }
         };
 
@@ -80,12 +64,10 @@ public class my_ads_Activity extends AppCompatActivity {
     public static class BlogViewHolder extends RecyclerView.ViewHolder
     {
         View mview;
-        Button edit_ad;
         public BlogViewHolder(View itemView)
         {
             super(itemView);
             mview=itemView;
-            this.edit_ad=itemView.findViewById(R.id.edit_ad);
         }
 
         public void setdistrictname(String district)
@@ -129,10 +111,5 @@ public class my_ads_Activity extends AppCompatActivity {
             //Picasso.with(ctx).load(image).into(image1);
             Glide.with(ctx).load(image).into(image1);
         }
-    }
-
-    private void getuserdata() {
-        Intent intent = getIntent();
-        user_phone = intent.getStringExtra("phone");
     }
 }

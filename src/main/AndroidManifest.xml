@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".forgotten_change_passwordActivity"></activity>
+        <activity android:name=".edit_my_ad_Activity"></activity>
+        <activity android:name=".all_ads_Activity" />
+        <activity android:name=".forgotten_change_passwordActivity" />
         <activity android:name=".forgotten_verifyActivity" />
         <activity android:name=".forgotten_passwordActivity" />
         <activity android:name=".my_ads_Activity" />

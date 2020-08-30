@@ -80,11 +80,11 @@ public class post_an_addActivity extends AppCompatActivity {
               {
                   bergain="No";
               }
-
+                String key="";
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad"); //user profile ad
                 DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad");  //universal ad
-                User user=new User(areaName, sizeOfhouse, rentCharge, describeHouse, extraContact, distRict, bergain);
-                String key=reference1.push().getKey();
+                key=reference1.push().getKey();
+                User user=new User(areaName, sizeOfhouse, rentCharge, describeHouse, extraContact, distRict, bergain, key, user_phone);
                 reference.child(key).setValue(user);
                 reference1.child(key).setValue(user);
 

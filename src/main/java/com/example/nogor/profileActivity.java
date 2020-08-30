@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -90,7 +91,7 @@ public class profileActivity extends AppCompatActivity {
         lookforad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(profileActivity.this, my_ads_Activity.class));
+                startActivity(new Intent(profileActivity.this, all_ads_Activity.class));
             }
         });
 
@@ -119,5 +120,13 @@ public class profileActivity extends AppCompatActivity {
         Glide.with(profileActivity.this)
                 .load(image)
                 .into(dp);
+    }
+
+    public void perform_action(View v)
+    {
+        TextView tv= (TextView) findViewById(R.id.myad);
+        Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
+        intent.putExtra("phone", user_phone);
+        startActivity(intent);
     }
 }

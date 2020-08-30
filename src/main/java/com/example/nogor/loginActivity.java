@@ -94,17 +94,26 @@ public class loginActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
                         //if (snapshot.hasChild(phone)) {
-                        String nameFromDB = snapshot.child(phone).child("name").getValue(String.class);
-                        String addressFromDB = snapshot.child(phone).child("address").getValue(String.class);
-                        String phoneFromDB = snapshot.child(phone).child("phone").getValue(String.class);
-                        String emailFromDB = snapshot.child(phone).child("email").getValue(String.class);
-                        String passwordFromDB = snapshot.child(phone).child("password").getValue(String.class);
+                        String nameFromDB = snapshot.child("users").child(phone).child("name").getValue(String.class);
+                        String addressFromDB = snapshot.child("users").child(phone).child("address").getValue(String.class);
+                        String phoneFromDB = snapshot.child("users").child(phone).child("phone").getValue(String.class);
+                        String emailFromDB = snapshot.child("users").child(phone).child("email").getValue(String.class);
+                        String passwordFromDB = snapshot.child("users").child(phone).child("password").getValue(String.class);
+                        String dpFromDB = snapshot.child("users").child(phone).child("dp").getValue(String.class);
                         Intent intent = new Intent(getApplicationContext(), profileActivity.class);
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("address", addressFromDB);
                         intent.putExtra("email", emailFromDB);
                         intent.putExtra("phone", phoneFromDB);
                         intent.putExtra("password", passwordFromDB);
+                        if(dpFromDB==null)
+                        {
+                            intent.putExtra("dp", "");
+                        }
+                        else
+                        {
+                            intent.putExtra("dp", dpFromDB);
+                        }
                         if (phoneFromDB !=null && phoneFromDB.length()> 0) {
                             Toast.makeText(loginActivity.this, "Welcome "+nameFromDB+"!", Toast.LENGTH_SHORT).show();
                             startActivity(intent);

@@ -53,13 +53,21 @@ public class MainActivity extends AppCompatActivity {
                         String emailFromDB = snapshot.child("email").getValue(String.class);
                         String passwordFromDB = snapshot.child("password").getValue(String.class);
                         String dpFromDB = snapshot.child("dp").getValue(String.class);
+
                         Intent intent = new Intent(getApplicationContext(), profileActivity.class);
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("address", addressFromDB);
                         intent.putExtra("email", emailFromDB);
                         intent.putExtra("phone", phoneFromDB);
                         intent.putExtra("password", passwordFromDB);
-                        intent.putExtra("dp", dpFromDB);
+                        if(dpFromDB==null)
+                        {
+                            intent.putExtra("dp", "");
+                        }
+                        else
+                        {
+                            intent.putExtra("dp", dpFromDB);
+                        }
                         if(nameFromDB.length()==0 || addressFromDB.length()==0 || phoneFromDB.length()==0)
                         {
                             Intent intent1 = new Intent(MainActivity.this, loginActivity.class);
