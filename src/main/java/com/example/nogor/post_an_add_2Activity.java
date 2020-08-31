@@ -11,6 +11,8 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
@@ -52,6 +54,9 @@ public class post_an_add_2Activity extends AppCompatActivity {
 
     StorageReference storageReference;
 
+    private long backPressedTime;
+    private Toast backToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,6 +91,20 @@ public class post_an_add_2Activity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        } else {
+            backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
+    }
+
 
     private String getExtension(Uri uri)
     {
@@ -145,7 +164,6 @@ public class post_an_add_2Activity extends AppCompatActivity {
                                 if(x==1)
                                 {
                                     String y=String.valueOf(x);
-                                    Toast.makeText(post_an_add_2Activity.this, "STOP!", Toast.LENGTH_SHORT).show();
                                     ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
@@ -184,6 +202,7 @@ public class post_an_add_2Activity extends AppCompatActivity {
             intent.putExtra("phone", user_phone);
             intent.putExtra("key", user_id);
             startActivity(intent);
+            finish();
         }
         else
         {
@@ -192,6 +211,7 @@ public class post_an_add_2Activity extends AppCompatActivity {
             intent.putExtra("phone", user_phone);
             intent.putExtra("key", user_id);
             startActivity(intent);
+            finish();
         }
     }
 }

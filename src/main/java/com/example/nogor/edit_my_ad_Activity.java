@@ -1,9 +1,13 @@
 package com.example.nogor;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,19 +16,32 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
+import java.util.ArrayList;
 
 public class edit_my_ad_Activity extends AppCompatActivity {
     String key, user_phone;
     String areaName2, areasize2, rent_money2, dist2, description2, contact2, bergain2, post_image2;
     EditText rent_money1, dist1, areaName1, areasize1, description1, contact1, bergain1;
     Button edit_ad1;
-    ImageView post_image1;
+    private final int PICK_IMAGE_REQUEST = 71;
+    ArrayList<Uri> Imagelist= new ArrayList<Uri>();
+    private Uri filePath;
+    ImageView tv;
     DatabaseReference reference;
+    StorageReference storageReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +55,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         contact1=findViewById(R.id.contact1);
         bergain1=findViewById(R.id.bergain1);
         edit_ad1=findViewById(R.id.edit_ad1);
+        tv=findViewById(R.id.post_image1);
 
         final DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
         DatabaseReference reference1=rootRef.child("users").child(user_phone).child("ad").child(key);
@@ -69,12 +87,14 @@ public class edit_my_ad_Activity extends AppCompatActivity {
 
             }
         });
-        Toast.makeText(edit_my_ad_Activity.this, areaName2, Toast.LENGTH_SHORT).show();
+        
+        storageReference = FirebaseStorage.getInstance().getReference("users/ad/"+key);
 
         edit_ad1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 reference= FirebaseDatabase.getInstance().getReference("users");
+                uploadImage();
                 updatedata();
             }
         });
@@ -198,5 +218,89 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         user_phone = intent.getStringExtra("phone");
     }
 
+    public void perform_action(View v)
+    {
+        chooseImage();
+    }
 
+    private void chooseImage() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
+                && data != null && data.getData() != null )
+        {
+            filePath = data.getData();
+            Imagelist.add(filePath);
+            tv.setImageURI(filePath);
+        }
+    }
+
+    private void uploadImage() {
+
+        if(filePath != null)
+        {
+            final ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setTitle("Uploading...");
+            progressDialog.show();
+            {
+                Uri individula_image=Imagelist.get(0);
+                final StorageReference ref = storageReference.child(individula_image.getLastPathSegment());
+                ref.putFile(individula_image)
+                        .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                            @Override
+                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                                {
+                                    String y=String.valueOf(1);
+                                    ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                        @Override
+                                        public void onSuccess(Uri uri) {
+                                            String url=String.valueOf(uri);
+                                            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad").child(key).child("image");
+                                            //reference.child("image").setValue(url);
+                                            reference.setValue(url);
+                                            DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad").child(key).child("image");
+                                            reference1.setValue(url);
+                                        }
+                                    });
+                                }
+                                //Toast.makeText(post_an_add_2Activity.this, "Uploaded", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                //progressDialog.dismiss();
+                                Toast.makeText(edit_my_ad_Activity.this, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                            @Override
+                            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                                double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
+                                        .getTotalByteCount());
+                                progressDialog.setMessage("Uploaded "+(int)progress+"%");
+                            }
+                        });
+            }
+            progressDialog.dismiss();
+            //btnUpload.setVisibility(View.GONE);
+        }
+        else
+        {
+
+        }
+    }
+    public void setimage(String image)
+    {
+        //Picasso.with(ctx).load(image).into(image1);
+        Glide.with(edit_my_ad_Activity.this)
+                .load(image)
+                .into(tv);
+    }
 }

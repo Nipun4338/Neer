@@ -70,7 +70,7 @@ public class updateprofileActivity extends AppCompatActivity {
         Intent intent = getIntent();
         user_id = intent.getStringExtra("userid");
         user_phone=intent.getStringExtra("phone");
-        storageReference = FirebaseStorage.getInstance().getReference("users/ad/"+user_id+"/pic");
+        storageReference = FirebaseStorage.getInstance().getReference("users/"+user_phone+"/pic");
 
         reference= FirebaseDatabase.getInstance().getReference("users");
 
