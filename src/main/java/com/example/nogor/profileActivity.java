@@ -30,7 +30,6 @@ public class profileActivity extends AppCompatActivity {
     private long backPressedTime;
     private Toast backToast;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

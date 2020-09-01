@@ -2,11 +2,15 @@ package com.example.nogor;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Trace;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -17,6 +21,8 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import androidx.appcompat.widget.SearchView;
 import com.squareup.picasso.Picasso;
 
 public class all_ads_Activity extends AppCompatActivity {
@@ -37,6 +43,30 @@ public class all_ads_Activity extends AppCompatActivity {
         myView.setLayoutManager(new LinearLayoutManager(this));
 
 
+    }
+
+    private void firebaseSearch(String search)
+    {
+        search=search.toLowerCase();
+        Query firebaseSearchQuery=myReference.orderByChild("areaName1").startAt(search).endAt(search+"\uf0ff");
+
+        FirebaseRecyclerAdapter<Blog1, BlogViewHolder>firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<Blog1, BlogViewHolder>
+                (Blog1.class, R.layout.blog_rows1_layout, BlogViewHolder.class, firebaseSearchQuery) {
+            @Override
+            protected void populateViewHolder(BlogViewHolder viewHolder, Blog1 model, int position)
+            {
+                viewHolder.setdistrictname(model.getDistrict());
+                viewHolder.setadditionaldetails(model.getDescribeHouse());
+                viewHolder.setbergain(model.getBergain());
+                viewHolder.setcontact(model.getExtraContact());
+                viewHolder.setrent(model.getRentCharge());
+                viewHolder.setsize(model.getSizeOfhouse());
+                viewHolder.setareaname(model.getAreaName());
+                viewHolder.setimage(getApplicationContext(), model.getImage());
+            }
+        };
+
+        myView.setAdapter(firebaseRecyclerAdapter);
     }
 
     @Override
@@ -111,5 +141,36 @@ public class all_ads_Activity extends AppCompatActivity {
             //Picasso.with(ctx).load(image).into(image1);
             Glide.with(ctx).load(image).into(image1);
         }
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        MenuItem item=menu.findItem(R.id.action_search);
+        SearchView searchView=(SearchView) MenuItemCompat.getActionView(item);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                firebaseSearch(s);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                firebaseSearch(s);
+                return false;
+            }
+        });
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id=item.getItemId();
+        if(id==R.id.action_settings)
+        {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

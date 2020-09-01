@@ -66,6 +66,7 @@ public class post_an_addActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
               String  areaName=areaname.getText().toString();
+              String areaName1=areaName.toLowerCase();
               String  sizeOfhouse=sizeofhouse.getText().toString();
               String  rentCharge=rentcharge.getText().toString();
               String  describeHouse=describehouse.getText().toString();
@@ -84,7 +85,7 @@ public class post_an_addActivity extends AppCompatActivity {
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad"); //user profile ad
                 DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad");  //universal ad
                 key=reference1.push().getKey();
-                User user=new User(areaName, sizeOfhouse, rentCharge, describeHouse, extraContact, distRict, bergain, key, user_phone);
+                User user=new User(areaName, areaName1, sizeOfhouse, rentCharge, describeHouse, extraContact, distRict, bergain, key, user_phone);
                 reference.child(key).setValue(user);
                 reference1.child(key).setValue(user);
 

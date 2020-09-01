@@ -57,6 +57,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         edit_ad1=findViewById(R.id.edit_ad1);
         tv=findViewById(R.id.post_image1);
 
+
         final DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
         DatabaseReference reference1=rootRef.child("users").child(user_phone).child("ad").child(key);
         reference1.keepSynced(true);
@@ -120,6 +121,8 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         {
             reference.child(user_phone).child("ad").child(key).child("areaName").setValue(areaName1.getText().toString());
             reference.child("ad").child(key).child("areaName").setValue(areaName1.getText().toString());
+            reference.child(user_phone).child("ad").child(key).child("areaName1").setValue(areaName1.getText().toString().toLowerCase());
+            reference.child("ad").child(key).child("areaName1").setValue(areaName1.getText().toString().toLowerCase());
             return true;
         }
         else
