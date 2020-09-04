@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -33,15 +35,19 @@ import java.util.ArrayList;
 
 public class edit_my_ad_Activity extends AppCompatActivity {
     String key, user_phone;
-    String areaName2, areasize2, rent_money2, dist2, description2, contact2, bergain2, post_image2;
+    String areaName2, areasize2, rent_money2, dist2, description2, contact2, bergain2, post_image2="", result1="";
     EditText rent_money1, dist1, areaName1, areasize1, description1, contact1, bergain1;
-    Button edit_ad1;
+    Button edit_ad1, delete_ad;
     private final int PICK_IMAGE_REQUEST = 71;
     ArrayList<Uri> Imagelist= new ArrayList<Uri>();
     private Uri filePath;
     ImageView tv;
+    int flag=0;
     DatabaseReference reference;
     StorageReference storageReference;
+    AlertDialog dialog;
+    AlertDialog.Builder builder;
+    String[] items={"Yes", "No"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +62,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         bergain1=findViewById(R.id.bergain1);
         edit_ad1=findViewById(R.id.edit_ad1);
         tv=findViewById(R.id.post_image1);
+        delete_ad=findViewById(R.id.delete_ad);
 
 
         final DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
@@ -81,6 +88,10 @@ public class edit_my_ad_Activity extends AppCompatActivity {
                 dist2 = snapshot.child("district").getValue(String.class);
                 dist1.setHint("District: "+dist2);
                 post_image2=snapshot.child("image").getValue(String.class);
+                if(post_image2!=null && post_image2.length()>0)
+                {
+                    setimage(post_image2);
+                }
             }
 
             @Override
@@ -88,6 +99,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
 
             }
         });
+
         
         storageReference = FirebaseStorage.getInstance().getReference("users/ad/"+key);
 
@@ -100,11 +112,55 @@ public class edit_my_ad_Activity extends AppCompatActivity {
             }
         });
 
+        delete_ad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                builder=new AlertDialog.Builder(edit_my_ad_Activity.this);
+                builder.setTitle("Are you confirm to remove your ad?");
+                builder.setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        result1=items[i];
+                    }
+                });
+
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        if(result1=="Yes")
+                        {
+                            deletead(key);
+                        }
+                    }
+                });
+                builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+                dialog = builder.create();
+                dialog.show();
+            }
+        });
+
+    }
+
+    private void deletead(String key) {
+        final DatabaseReference rootRef1 = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference reference2=rootRef1.child("users").child(user_phone).child("ad").child(key);
+        DatabaseReference reference3=rootRef1.child("users").child("ad").child(key);
+        reference2.removeValue();
+        reference3.removeValue();
+        Toast.makeText(edit_my_ad_Activity.this, "Ad is deleted!", Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(getApplicationContext(), my_ads_Activity.class);
+        intent.putExtra("phone", user_phone);
+        startActivity(intent);
     }
 
     public void updatedata()
     {
-        if(isareanamechanged() || isareasizechanged() || isrent_moneychanged() || isdescriptionchanged() || iscontactchanged() || isbergainchanged() || isdistchanged())
+        if(isareanamechanged() || isareasizechanged() || isrent_moneychanged() || isdescriptionchanged() || iscontactchanged() || isbergainchanged() || isdistchanged() || flag==1)
         {
             Toast.makeText(this, "Your ad has been updated!", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(edit_my_ad_Activity.this, profileActivity.class));
@@ -269,6 +325,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
                                             reference.setValue(url);
                                             DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad").child(key).child("image");
                                             reference1.setValue(url);
+                                            flag=1;
                                         }
                                     });
                                 }

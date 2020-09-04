@@ -13,6 +13,7 @@
     >
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="700dp"
         android:background="@color/black"
@@ -20,25 +21,23 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/post_image1"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="300dp"
             android:background="@drawable/d"
-            android:scaleType="fitXY"
             android:onClick="perform_action"
-            />
+            android:scaleType="fitXY" />
 
         <EditText
             android:id="@+id/rent_money1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Money"
-            android:textColorHint="@color/hint"
             android:textColor="@color/white"
+            android:textColorHint="@color/hint"
             android:textSize="25dp" />
 
         <EditText
@@ -46,54 +45,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="District"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:textColorHint="@color/hint" />
+            android:textColorHint="@color/hint"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/areaName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Area"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:textColorHint="@color/hint" />
+            android:textColorHint="@color/hint"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/areasize1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Area-size"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:textColorHint="@color/hint" />
+            android:textColorHint="@color/hint"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/description1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Additional Description"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:textColorHint="@color/hint" />
+            android:textColorHint="@color/hint"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/contact1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contact"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:textColorHint="@color/hint" />
+            android:textColorHint="@color/hint"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/bergain1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Bergainable"
-            android:textSize="15dp"
             android:textColor="@color/white"
-            android:textColorHint="@color/hint" />
+            android:textColorHint="@color/hint"
+            android:textSize="15dp" />
 
         <Button
             android:id="@+id/edit_ad1"
@@ -101,6 +100,14 @@
             android:layout_height="28dp"
             android:background="#444"
             android:text="Update Ad"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/delete_ad"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="#444"
+            android:text="Delete Ad"
             android:textColor="#FFFFFF" />
 
 

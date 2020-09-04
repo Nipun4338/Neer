@@ -48,7 +48,7 @@ public class all_ads_Activity extends AppCompatActivity {
     private void firebaseSearch(String search)
     {
         search=search.toLowerCase();
-        Query firebaseSearchQuery=myReference.orderByChild("areaName1").startAt(search).endAt(search+"\uf0ff");
+        Query firebaseSearchQuery=myReference.orderByChild("areaName1").startAt(search).endAt(search+"\uf8ff");
 
         FirebaseRecyclerAdapter<Blog1, BlogViewHolder>firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<Blog1, BlogViewHolder>
                 (Blog1.class, R.layout.blog_rows1_layout, BlogViewHolder.class, firebaseSearchQuery) {
