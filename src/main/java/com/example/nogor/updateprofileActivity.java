@@ -26,6 +26,8 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.ArrayList;
+
 public class updateprofileActivity extends AppCompatActivity {
 
     EditText name1, phone1, email1, password1, address1;
@@ -38,7 +40,7 @@ public class updateprofileActivity extends AppCompatActivity {
     ImageView dp;
     int flag=0;
     int sum=0;
-
+    ArrayList<Uri> Imagelist= new ArrayList<Uri>();
     private final int PICK_IMAGE_REQUEST = 71;
     StorageReference storageReference;
     @Override
@@ -197,8 +199,8 @@ public class updateprofileActivity extends AppCompatActivity {
                 && data != null && data.getData() != null )
         {
             filePath = data.getData();
+            Imagelist.add(filePath);
             dp.setImageURI(filePath);
-            flag=1;
         }
     }
 
@@ -208,12 +210,13 @@ public class updateprofileActivity extends AppCompatActivity {
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
-            Uri individula_image = filePath;
+            Uri individula_image=Imagelist.get(0);
             final StorageReference ref = storageReference.child(individula_image.getLastPathSegment());
             ref.putFile(individula_image)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        String y=String.valueOf(1);
                         ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {
@@ -221,6 +224,7 @@ public class updateprofileActivity extends AppCompatActivity {
                                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(phone).child("dp");
                                 //reference.child("image").setValue(url);
                                 reference.setValue(pic);
+                                flag=1;
                             }
                         });
                         //Toast.makeText(post_an_add_2Activity.this, "Uploaded", Toast.LENGTH_SHORT).show();

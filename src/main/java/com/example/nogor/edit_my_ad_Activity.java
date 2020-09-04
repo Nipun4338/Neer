@@ -308,47 +308,45 @@ public class edit_my_ad_Activity extends AppCompatActivity {
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
-            {
-                Uri individula_image=Imagelist.get(0);
-                final StorageReference ref = storageReference.child(individula_image.getLastPathSegment());
-                ref.putFile(individula_image)
-                        .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                            @Override
-                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                                {
-                                    String y=String.valueOf(1);
-                                    ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                        @Override
-                                        public void onSuccess(Uri uri) {
-                                            String url=String.valueOf(uri);
-                                            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad").child(key).child("image");
-                                            //reference.child("image").setValue(url);
-                                            reference.setValue(url);
-                                            DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad").child(key).child("image");
-                                            reference1.setValue(url);
-                                            flag=1;
-                                        }
-                                    });
-                                }
-                                //Toast.makeText(post_an_add_2Activity.this, "Uploaded", Toast.LENGTH_SHORT).show();
+            Uri individula_image=Imagelist.get(0);
+            final StorageReference ref = storageReference.child(individula_image.getLastPathSegment());
+            ref.putFile(individula_image)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            {
+                                String y=String.valueOf(1);
+                                ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                    @Override
+                                    public void onSuccess(Uri uri) {
+                                        String url=String.valueOf(uri);
+                                        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad").child(key).child("image");
+                                        //reference.child("image").setValue(url);
+                                        reference.setValue(url);
+                                        DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad").child(key).child("image");
+                                        reference1.setValue(url);
+                                        flag=1;
+                                    }
+                                });
                             }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                //progressDialog.dismiss();
-                                Toast.makeText(edit_my_ad_Activity.this, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-                            @Override
-                            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-                                double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
-                                        .getTotalByteCount());
-                                progressDialog.setMessage("Uploaded "+(int)progress+"%");
-                            }
-                        });
-            }
+                            //Toast.makeText(post_an_add_2Activity.this, "Uploaded", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            //progressDialog.dismiss();
+                            Toast.makeText(edit_my_ad_Activity.this, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                            double progress = (100.0*taskSnapshot.getBytesTransferred()/taskSnapshot
+                                    .getTotalByteCount());
+                            progressDialog.setMessage("Uploaded "+(int)progress+"%");
+                        }
+                    });
             progressDialog.dismiss();
             //btnUpload.setVisibility(View.GONE);
         }
