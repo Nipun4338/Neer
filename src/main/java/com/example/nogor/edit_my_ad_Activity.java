@@ -156,8 +156,14 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         reference3.removeValue();
         Toast.makeText(edit_my_ad_Activity.this, "Ad is deleted!", Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(getApplicationContext(), my_ads_Activity.class);
+        intent.putExtra("name", user_name);
+        intent.putExtra("address", user_address);
+        intent.putExtra("email", user_email);
         intent.putExtra("phone", user_phone);
+        intent.putExtra("password", user_password);
+        intent.putExtra("dp", user_dp);
         startActivity(intent);
+        finish();
     }
 
     public void updatedata()

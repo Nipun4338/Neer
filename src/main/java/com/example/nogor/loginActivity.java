@@ -142,14 +142,6 @@ public class loginActivity extends AppCompatActivity {
         }
     }
 
-
-
-
-
-
-
-
-
     private Boolean validateUsername() {
         Phone = phone.getText().toString();
         if (Phone.isEmpty()) {

@@ -43,7 +43,7 @@ public class forgotten_change_passwordActivity extends AppCompatActivity {
 
     public void updatedata()
     {
-            if(forgottenpassword.length()<=0)
+            if(forgottenpassword==null || forgottenpassword.length()<=0)
             {
                 forgottenpassword.setError("Invalid Password...");
             }

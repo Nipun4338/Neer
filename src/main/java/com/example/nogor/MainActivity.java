@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         intent.putExtra("email", emailFromDB);
                         intent.putExtra("phone", phoneFromDB);
                         intent.putExtra("password", passwordFromDB);
-                        if(dpFromDB==null)
+                        if(dpFromDB==null || dpFromDB.length()==0)
                         {
                             intent.putExtra("dp", "");
                         }
