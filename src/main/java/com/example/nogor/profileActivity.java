@@ -1,11 +1,13 @@
 package com.example.nogor;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -34,6 +37,7 @@ public class profileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        getuserdata();
 
         postad=findViewById(R.id.postad);
         lookforad=findViewById(R.id.lookforad);
@@ -45,7 +49,6 @@ public class profileActivity extends AppCompatActivity {
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
 
-        getuserdata();
         settings=findViewById(R.id.settings);
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,10 +64,11 @@ public class profileActivity extends AppCompatActivity {
             }
         });
         name.setText(user_name+"!");
-        if(user_dp.length()>0)
+        if(user_dp!=null && user_dp.length()>0)
         {
             setimage(user_dp);
         }
+
 
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +98,9 @@ public class profileActivity extends AppCompatActivity {
         lookforad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(profileActivity.this, all_ads_Activity.class));
+                Intent intent = new Intent(getApplicationContext(), all_ads_Activity.class);
+                intent.putExtra("phone", user_phone);
+                startActivity(intent);
             }
         });
 
@@ -102,6 +108,43 @@ public class profileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(profileActivity.this, look_for_houseActivity.class));
+            }
+        });
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.action_home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_home:
+                        return true;
+                    case R.id.action_myads:
+                        //getuserdata();
+                        Intent intent2=new Intent(getApplicationContext(), my_ads_Activity.class);
+                        intent2.putExtra("name", user_name);
+                        intent2.putExtra("address", user_address);
+                        intent2.putExtra("email", user_email);
+                        intent2.putExtra("phone", user_phone);
+                        intent2.putExtra("password", user_password);
+                        intent2.putExtra("dp", user_dp);
+                        startActivity(intent2);
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.action_allads:
+                        //getuserdata();
+                        Intent intent1=new Intent(getApplicationContext(), all_ads_Activity.class);
+                        intent1.putExtra("name", user_name);
+                        intent1.putExtra("address", user_address);
+                        intent1.putExtra("email", user_email);
+                        intent1.putExtra("phone", user_phone);
+                        intent1.putExtra("password", user_password);
+                        intent1.putExtra("dp", user_dp);
+                        startActivity(intent1);
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
             }
         });
 
@@ -138,11 +181,4 @@ public class profileActivity extends AppCompatActivity {
                 .into(dp);
     }
 
-    public void perform_action(View v)
-    {
-        TextView tv= (TextView) findViewById(R.id.myad);
-        Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
-        intent.putExtra("phone", user_phone);
-        startActivity(intent);
-    }
 }

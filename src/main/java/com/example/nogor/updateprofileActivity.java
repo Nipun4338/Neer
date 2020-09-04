@@ -30,13 +30,14 @@ public class updateprofileActivity extends AppCompatActivity {
 
     EditText name1, phone1, email1, password1, address1;
     TextView name2, phone2, email2, password2, address2;
-    String name, phone, email, address, password, pic;
+    String name, phone, email, address, password, pic, url;
     Button update;
     DatabaseReference reference;
     String user_id, user_phone;
     private Uri filePath;
     ImageView dp;
     int flag=0;
+    int sum=0;
 
     private final int PICK_IMAGE_REQUEST = 71;
     StorageReference storageReference;
@@ -66,26 +67,22 @@ public class updateprofileActivity extends AppCompatActivity {
         email2.setText(email);
         address2.setText(address);
         password2.setText(password);
-
-        Intent intent = getIntent();
-        user_id = intent.getStringExtra("userid");
-        user_phone=intent.getStringExtra("phone");
-        storageReference = FirebaseStorage.getInstance().getReference("users/"+user_phone+"/pic");
+        storageReference = FirebaseStorage.getInstance().getReference("users/"+phone+"/pic");
 
         reference= FirebaseDatabase.getInstance().getReference("users");
 
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                name2=findViewById(R.id.text);
+                /*name2=findViewById(R.id.text);
                 name1=findViewById(R.id.editname);
                 email2=findViewById(R.id.text1);
                 email1=findViewById(R.id.editemail);
                 address2=findViewById(R.id.text2);
                 address1=findViewById(R.id.editaddress);
                 password2=findViewById(R.id.text3);
-                password1=findViewById(R.id.editpassword);
-                update=findViewById(R.id.update);
+                password1=findViewById(R.id.editpassword);*/
+                //update=findViewById(R.id.update);
 
                 reference= FirebaseDatabase.getInstance().getReference("users");
                 updatedata();
@@ -107,70 +104,71 @@ public class updateprofileActivity extends AppCompatActivity {
 
     public void updatedata()
     {
-        if(isnamechanged() || isemailchanged() || isaddresschanged() || ispasswordchanged() || flag==1)
+        isnamechanged();
+        isemailchanged();
+        isaddresschanged();
+        ispasswordchanged();
+        sum+=flag;
+        //Toast.makeText(updateprofileActivity.this, sum, Toast.LENGTH_SHORT).show();
+        if(sum>0)
         {
-            Toast.makeText(this, "Account data has been updated!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(updateprofileActivity.this, "Account data has been updated!", Toast.LENGTH_SHORT).show();
+            Intent intent=new Intent(getApplicationContext(), profileActivity.class);
+            intent.putExtra("name", name);
+            intent.putExtra("address", address);
+            intent.putExtra("email", email);
+            intent.putExtra("phone", phone);
+            intent.putExtra("password", password);
+            intent.putExtra("dp", pic);
+            startActivity(intent);
+            finish();
         }
         else
         {
-            Toast.makeText(this, "Account data is same and cannot be updated!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(updateprofileActivity.this, "Account data is same and cannot be updated!", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private boolean isnamechanged()
+    private void isnamechanged()
     {
-        if(!name.equals(name1.getText().toString()) && name1.getText().toString().length()>0)
+        if(name1.getText().toString()!=null && name1.getText().toString().length()>0 && !name.equals(name1.getText().toString()))
         {
             reference.child(phone).child("name").setValue(name1.getText().toString());
             name2.setText(name1.getText().toString());
             name=name1.getText().toString();
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
-    private boolean isemailchanged()
+    private void isemailchanged()
     {
-        if(!email.equals(email1.getText().toString()) && email1.getText().toString().length()>0)
+        if(email1.getText().toString()!=null && email1.getText().toString().length()>0 && !email.equals(email1.getText().toString()))
         {
             reference.child(phone).child("email").setValue(email1.getText().toString());
             email2.setText(email1.getText().toString());
             email=email1.getText().toString();
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
-    private boolean isaddresschanged()
+    private void isaddresschanged()
     {
-        if(!address.equals(address1.getText().toString()) && address1.getText().toString().length()>0)
+        if(address1.getText().toString()!=null && address1.getText().toString().length()>0 && !address.equals(address1.getText().toString()))
         {
             reference.child(phone).child("address").setValue(address1.getText().toString());
             address2.setText(address1.getText().toString());
             address=address1.getText().toString();
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
+            //return true;
         }
     }
-    private boolean ispasswordchanged()
+    private void ispasswordchanged()
     {
-        if(!password.equals(password1.getText().toString()) && password1.getText().toString().length()>0)
+        if(password1.getText().toString()!=null && password1.getText().toString().length()>0 && !password.equals(password1.getText().toString()))
         {
             reference.child(phone).child("password").setValue(password1.getText().toString());
             password2.setText(password1.getText().toString());
             password=password1.getText().toString();
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
+            //return true;
         }
     }
 
@@ -219,10 +217,10 @@ public class updateprofileActivity extends AppCompatActivity {
                         ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {
-                                String url = String.valueOf(uri);
-                                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("dp");
+                                pic = String.valueOf(uri);
+                                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(phone).child("dp");
                                 //reference.child("image").setValue(url);
-                                reference.setValue(url);
+                                reference.setValue(pic);
                             }
                         });
                         //Toast.makeText(post_an_add_2Activity.this, "Uploaded", Toast.LENGTH_SHORT).show();

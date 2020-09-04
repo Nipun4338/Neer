@@ -50,7 +50,7 @@ public class post_an_add_2Activity extends AppCompatActivity {
 
     int x=0;
     private final int PICK_IMAGE_REQUEST = 71;
-    String user_id, user_phone;
+    String user_id, user_phone, user_address, user_name, user_email, user_password, user_dp;
 
     StorageReference storageReference;
 
@@ -71,7 +71,12 @@ public class post_an_add_2Activity extends AppCompatActivity {
 
         Intent intent = getIntent();
         user_id = intent.getStringExtra("userid");
-        user_phone=intent.getStringExtra("phone");
+        user_address = intent.getStringExtra("address");
+        user_name = intent.getStringExtra("name");
+        user_email = intent.getStringExtra("email");
+        user_phone = intent.getStringExtra("phone");
+        user_password = intent.getStringExtra("password");
+        user_dp = intent.getStringExtra("dp");
         storageReference = FirebaseStorage.getInstance().getReference("users/ad/"+user_id);
 
 
@@ -199,7 +204,12 @@ public class post_an_add_2Activity extends AppCompatActivity {
             //btnUpload.setVisibility(View.GONE);
             Toast.makeText(post_an_add_2Activity.this, "Ad successfully added!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
+            intent.putExtra("name", user_name);
+            intent.putExtra("address", user_address);
+            intent.putExtra("email", user_email);
             intent.putExtra("phone", user_phone);
+            intent.putExtra("password", user_password);
+            intent.putExtra("dp", user_dp);
             intent.putExtra("key", user_id);
             startActivity(intent);
             finish();
@@ -208,7 +218,12 @@ public class post_an_add_2Activity extends AppCompatActivity {
         {
             Toast.makeText(post_an_add_2Activity.this, "Ad successfully added!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
+            intent.putExtra("name", user_name);
+            intent.putExtra("address", user_address);
+            intent.putExtra("email", user_email);
             intent.putExtra("phone", user_phone);
+            intent.putExtra("password", user_password);
+            intent.putExtra("dp", user_dp);
             intent.putExtra("key", user_id);
             startActivity(intent);
             finish();

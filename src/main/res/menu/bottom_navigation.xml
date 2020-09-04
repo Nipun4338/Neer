@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
         android:title="Home" />
     <item
-        android:id="@+id/nav_my_ads"
-        android:icon="@drawable/ic_my_ads"
+        android:id="@+id/action_myads"
+        android:icon="@drawable/ic_myad"
         android:title="My Ads" />
+    <item
+        android:id="@+id/action_allads"
+        android:icon="@drawable/ic_allad"
+        android:title="All Ads" />
 </menu>

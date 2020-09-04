@@ -19,9 +19,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
 public class post_an_addActivity extends AppCompatActivity {
-    TextView example;
     EditText areaname, sizeofhouse, rentcharge, describehouse, extracontact;
-    String user_address, user_name, user_email, user_phone, user_password;
+    String user_address, user_name, user_email, user_phone, user_password, user_dp;
     Switch switch1;
     Button rent;
     String text;
@@ -30,7 +29,6 @@ public class post_an_addActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_an_add);
-        example=findViewById(R.id.example);
         sizeofhouse=findViewById(R.id.sizeofhouse);
         areaname=findViewById(R.id.areaname);
         rentcharge=findViewById(R.id.rentcharge);
@@ -53,7 +51,6 @@ public class post_an_addActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 text = spinner.getSelectedItem().toString();
-                example.setText(text);
             }
 
             @Override
@@ -91,11 +88,16 @@ public class post_an_addActivity extends AppCompatActivity {
 
                 Toast.makeText(post_an_addActivity.this, "Ad details successfully added!", Toast.LENGTH_SHORT).show();
                 //startActivity();
-                example.setText(key);
                 Intent intent = new Intent(getApplicationContext(), post_an_add_2Activity.class);
                 intent.putExtra("userid", key);
+                intent.putExtra("name", user_name);
+                intent.putExtra("address", user_address);
+                intent.putExtra("email", user_email);
                 intent.putExtra("phone", user_phone);
+                intent.putExtra("password", user_password);
+                intent.putExtra("dp", user_dp);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -107,5 +109,6 @@ public class post_an_addActivity extends AppCompatActivity {
         user_email = intent.getStringExtra("email");
         user_phone = intent.getStringExtra("phone");
         user_password = intent.getStringExtra("password");
+        user_dp = intent.getStringExtra("dp");
     }
 }

@@ -37,11 +37,13 @@ public class edit_my_ad_Activity extends AppCompatActivity {
     String key, user_phone;
     String areaName2, areasize2, rent_money2, dist2, description2, contact2, bergain2, post_image2="", result1="";
     EditText rent_money1, dist1, areaName1, areasize1, description1, contact1, bergain1;
+    String user_address, user_name, user_email, user_password, user_dp;
     Button edit_ad1, delete_ad;
     private final int PICK_IMAGE_REQUEST = 71;
     ArrayList<Uri> Imagelist= new ArrayList<Uri>();
     private Uri filePath;
     ImageView tv;
+    int sum=0;
     int flag=0;
     DatabaseReference reference;
     StorageReference storageReference;
@@ -160,10 +162,26 @@ public class edit_my_ad_Activity extends AppCompatActivity {
 
     public void updatedata()
     {
-        if(isareanamechanged() || isareasizechanged() || isrent_moneychanged() || isdescriptionchanged() || iscontactchanged() || isbergainchanged() || isdistchanged() || flag==1)
+        isareanamechanged();
+        isareasizechanged();
+        isrent_moneychanged();
+        isdescriptionchanged();
+        iscontactchanged();
+        isbergainchanged();
+        isdistchanged();
+        sum+=flag;
+        if(sum>0)
         {
             Toast.makeText(this, "Your ad has been updated!", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(edit_my_ad_Activity.this, profileActivity.class));
+            Intent intent = new Intent(getApplicationContext(), my_ads_Activity.class);
+            intent.putExtra("name", user_name);
+            intent.putExtra("address", user_address);
+            intent.putExtra("email", user_email);
+            intent.putExtra("phone", user_phone);
+            intent.putExtra("password", user_password);
+            intent.putExtra("dp", user_dp);
+            startActivity(intent);
+            finish();
         }
         else
         {
@@ -171,110 +189,87 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         }
     }
 
-    private boolean isareanamechanged()
+    private void isareanamechanged()
     {
-        if(!areaName2.equals(areaName1.getText().toString()) && areaName1.getText().toString().length()>0)
+        if(areaName1.getText().toString()!=null && areaName1.getText().toString().length()>0 && !areaName2.equals(areaName1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("areaName").setValue(areaName1.getText().toString());
             reference.child("ad").child(key).child("areaName").setValue(areaName1.getText().toString());
             reference.child(user_phone).child("ad").child(key).child("areaName1").setValue(areaName1.getText().toString().toLowerCase());
             reference.child("ad").child(key).child("areaName1").setValue(areaName1.getText().toString().toLowerCase());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
-    private boolean isareasizechanged()
+    private void isareasizechanged()
     {
-        if(!areasize2.equals(areasize1.getText().toString()) && areasize1.getText().toString().length()>0)
+        if(areasize1.getText().toString()!=null && areasize1.getText().toString().length()>0 && !areasize2.equals(areasize1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("sizeOfhouse").setValue(areasize1.getText().toString());
             reference.child("ad").child(key).child("sizeOfhouse").setValue(areasize1.getText().toString());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
-    private boolean isrent_moneychanged()
+    private void isrent_moneychanged()
     {
-        if(!rent_money2.equals(rent_money1.getText().toString()) && rent_money1.getText().toString().length()>0)
+        if(rent_money1.getText().toString()!=null && rent_money1.getText().toString().length()>0 && !rent_money2.equals(rent_money1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("rentCharge").setValue(rent_money1.getText().toString());
             reference.child("ad").child(key).child("rentCharge").setValue(rent_money1.getText().toString());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
-    private boolean isdescriptionchanged()
+    private void isdescriptionchanged()
     {
-        if(!description2.equals(description1.getText().toString()) && description1.getText().toString().length()>0)
+        if(description1.getText().toString()!=null && description1.getText().toString().length()>0 && !description2.equals(description1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("describeHouse").setValue(description1.getText().toString());
             reference.child("ad").child(key).child("describeHouse").setValue(description1.getText().toString());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
-    private boolean iscontactchanged()
+    private void iscontactchanged()
     {
-        if(!contact2.equals(contact1.getText().toString()) && contact1.getText().toString().length()>0)
+        if(contact1.getText().toString()!=null && contact1.getText().toString().length()>0 && !contact2.equals(contact1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("extraContact").setValue(contact1.getText().toString());
             reference.child("ad").child(key).child("extraContact").setValue(contact1.getText().toString());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
-    private boolean isbergainchanged()
+    private void isbergainchanged()
     {
-        if(!bergain2.equals(bergain1.getText().toString()) && bergain1.getText().toString().length()>0)
+        if(bergain1.getText().toString()!=null && bergain1.getText().toString().length()>0 && !bergain2.equals(bergain1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("bergain").setValue(bergain1.getText().toString());
             reference.child("ad").child(key).child("bergain").setValue(bergain1.getText().toString());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
-    private boolean isdistchanged()
+    private void isdistchanged()
     {
-        if(!dist2.equals(dist1.getText().toString()) && dist1.getText().toString().length()>0)
+        if(dist1.getText().toString()!=null && dist1.getText().toString().length()>0 && !dist2.equals(dist1.getText().toString()))
         {
             reference.child(user_phone).child("ad").child(key).child("district").setValue(dist1.getText().toString());
             reference.child("ad").child(key).child("district").setValue(dist1.getText().toString());
-            return true;
-        }
-        else
-        {
-            return false;
+            sum++;
         }
     }
 
     private void getuserdata() {
         Intent intent = getIntent();
         key = intent.getStringExtra("key");
+        user_address = intent.getStringExtra("address");
+        user_name = intent.getStringExtra("name");
+        user_email = intent.getStringExtra("email");
         user_phone = intent.getStringExtra("phone");
+        user_password = intent.getStringExtra("password");
+        user_dp = intent.getStringExtra("dp");
     }
 
     public void perform_action(View v)

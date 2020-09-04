@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,7 +33,7 @@ public class my_ads_Activity extends AppCompatActivity {
     private RecyclerView myView;
     private DatabaseReference myReference;
 
-    String key1, user_phone;
+    String key1, user_phone, user_address, user_name, user_email, user_password, user_dp;
     Button edit_ad;
 
 
@@ -40,6 +42,43 @@ public class my_ads_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_ads_);
         getuserdata();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.action_myads);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_home:
+                        //getuserdata();
+                        Intent intent = new Intent(getApplicationContext(), profileActivity.class);
+                        intent.putExtra("name", user_name);
+                        intent.putExtra("address", user_address);
+                        intent.putExtra("email", user_email);
+                        intent.putExtra("phone", user_phone);
+                        intent.putExtra("password", user_password);
+                        intent.putExtra("dp", user_dp);
+                        startActivity(intent);
+                        overridePendingTransition(0, 0);
+                        return true;
+                    case R.id.action_myads:
+                        return true;
+                    case R.id.action_allads:
+                        //getuserdata();
+                        Intent intent1 = new Intent(getApplicationContext(), all_ads_Activity.class);
+                        intent1.putExtra("name", user_name);
+                        intent1.putExtra("address", user_address);
+                        intent1.putExtra("email", user_email);
+                        intent1.putExtra("phone", user_phone);
+                        intent1.putExtra("password", user_password);
+                        intent1.putExtra("dp", user_dp);
+                        startActivity(intent1);
+                        overridePendingTransition(0, 0);
+                        return true;
+                }
+                return false;
+            }
+        });
 
         myReference= FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad");
         myReference.keepSynced(true);
@@ -75,7 +114,12 @@ public class my_ads_Activity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent intent = new Intent(getApplicationContext(), edit_my_ad_Activity.class);
                         intent.putExtra("key", key2);
+                        intent.putExtra("name", user_name);
+                        intent.putExtra("address", user_address);
+                        intent.putExtra("email", user_email);
                         intent.putExtra("phone", user_phone);
+                        intent.putExtra("password", user_password);
+                        intent.putExtra("dp", user_dp);
                         startActivity(intent);
                     }
                 });
@@ -142,6 +186,11 @@ public class my_ads_Activity extends AppCompatActivity {
 
     private void getuserdata() {
         Intent intent = getIntent();
+        user_address = intent.getStringExtra("address");
+        user_name = intent.getStringExtra("name");
+        user_email = intent.getStringExtra("email");
         user_phone = intent.getStringExtra("phone");
+        user_password = intent.getStringExtra("password");
+        user_dp = intent.getStringExtra("dp");
     }
 }

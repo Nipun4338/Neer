@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Trace;
 import android.view.Menu;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
@@ -29,11 +31,50 @@ public class all_ads_Activity extends AppCompatActivity {
 
     private RecyclerView myView;
     private DatabaseReference myReference;
+    String user_phone, user_address, user_name, user_email, user_password, user_dp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_ads_);
+        getuserdata();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.action_allads);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_home:
+                        //getuserdata();
+                        Intent intent=new Intent(getApplicationContext(), profileActivity.class);
+                        intent.putExtra("name", user_name);
+                        intent.putExtra("address", user_address);
+                        intent.putExtra("email", user_email);
+                        intent.putExtra("phone", user_phone);
+                        intent.putExtra("password", user_password);
+                        intent.putExtra("dp", user_dp);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.action_myads:
+                        //getuserdata();
+                        Intent intent2=new Intent(getApplicationContext(), my_ads_Activity.class);
+                        intent2.putExtra("name", user_name);
+                        intent2.putExtra("address", user_address);
+                        intent2.putExtra("email", user_email);
+                        intent2.putExtra("phone", user_phone);
+                        intent2.putExtra("password", user_password);
+                        intent2.putExtra("dp", user_dp);
+                        startActivity(intent2);
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.action_allads:
+                        return true;
+                }
+                return false;
+            }
+        });
 
         myReference= FirebaseDatabase.getInstance().getReference("users").child("ad");
         myReference.keepSynced(true);
@@ -41,7 +82,6 @@ public class all_ads_Activity extends AppCompatActivity {
         myView=findViewById(R.id.myrecycleview1);
         myView.setHasFixedSize(true);
         myView.setLayoutManager(new LinearLayoutManager(this));
-
 
     }
 
@@ -172,5 +212,15 @@ public class all_ads_Activity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void getuserdata() {
+        Intent intent = getIntent();
+        user_address = intent.getStringExtra("address");
+        user_name = intent.getStringExtra("name");
+        user_email = intent.getStringExtra("email");
+        user_phone = intent.getStringExtra("phone");
+        user_password = intent.getStringExtra("password");
+        user_dp = intent.getStringExtra("dp");
     }
 }
