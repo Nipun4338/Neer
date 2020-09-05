@@ -34,7 +34,7 @@
         >
 
 
-        <ImageButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/send_files_btn"
             android:layout_width="60dp"
             android:layout_height="50dp"
@@ -56,14 +56,13 @@
             />
 
 
-        <ImageButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/send_message_btn"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/send_message"
             android:layout_alignParentEnd="true"
-            android:backgroundTint="@android:color/black"
-            />
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/send_message" />
 
     </RelativeLayout>
 </RelativeLayout>

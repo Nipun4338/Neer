@@ -60,7 +60,7 @@ public class message_Activity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private DatabaseReference RootRef, RootRef1;
 
-    private ImageButton SendMessageButton, SendFilesButton;
+    private FloatingActionButton SendMessageButton, SendFilesButton;
     private EditText MessageInputText;
 
     private final List<Messages> messagesList = new ArrayList<>();
@@ -123,8 +123,8 @@ public class message_Activity extends AppCompatActivity {
         userLastSeen = (TextView) findViewById(R.id.custom_user_last_seen);
         userImage = (CircleImageView) findViewById(R.id.custom_profile_image);
 
-        SendMessageButton = (ImageButton) findViewById(R.id.send_message_btn);
-        SendFilesButton = (ImageButton) findViewById(R.id.send_files_btn);
+        SendMessageButton = (FloatingActionButton) findViewById(R.id.send_message_btn);
+        SendFilesButton = (FloatingActionButton) findViewById(R.id.send_files_btn);
         MessageInputText = (EditText) findViewById(R.id.input_message);
 
         messageAdapter = new MessageAdapter(messagesList);
