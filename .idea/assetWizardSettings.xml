@@ -24,7 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\NIPUNP~1\AppData\Local\Temp\baseline_add_shopping_cart_24.xml" />
+                                                <entry key="imagePath" value="C:\Users\NIPUNP~1\AppData\Local\Temp\baseline_send_24.xml" />
                                                 <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
@@ -36,7 +36,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/add_shopping_cart/baseline_add_shopping_cart_24.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/send/baseline_send_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -68,8 +68,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_all_ad" />
-                                      <entry key="theme" value="HOLO_DARK" />
+                                      <entry key="outputName" value="send_message" />
+                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>
                                 </PersistentState>

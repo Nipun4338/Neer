@@ -11,6 +11,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -43,14 +44,18 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-
+    compile 'com.github.lguipeng:BubbleView:1.0.1'
+    implementation 'com.firebaseui:firebase-ui:6.2.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 
 buildscript {
     repositories {
         google()
         jcenter()
-
     }
     dependencies {
         classpath 'com.google.gms:google-services:4.3.3'

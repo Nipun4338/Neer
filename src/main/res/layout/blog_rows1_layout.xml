@@ -72,6 +72,14 @@
             android:text="Bergainable"
             android:textColor="#ffff" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/message"
+            android:background="#444"
+            android:text="Send message"
+            />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

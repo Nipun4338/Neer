@@ -1,14 +1,14 @@
 package com.example.nogor;
 
 public class Blog1 {
-    String sizeOfhouse, areaName, areaName1, rentCharge, describeHouse, extraContact, district, bergain, image;
+    String sizeOfhouse, areaName, areaName1, rentCharge, describeHouse, extraContact, district, bergain, image, key, User_phone;
 
     public Blog1()
     {
 
     }
 
-    public Blog1(String sizeOfhouse, String areaName, String areaName1, String rentCharge, String describeHouse, String extraContact, String district, String bergain, String image) {
+    public Blog1(String sizeOfhouse, String areaName, String areaName1, String rentCharge, String describeHouse, String extraContact, String district, String bergain, String image, String key, String User_phone) {
         this.sizeOfhouse = sizeOfhouse;
         this.areaName = areaName;
         this.areaName1 = areaName1;
@@ -18,6 +18,24 @@ public class Blog1 {
         this.district = district;
         this.bergain=bergain;
         this.image=image;
+        this.key=key;
+        this.User_phone=User_phone;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getUser_phone() {
+        return User_phone;
+    }
+
+    public void setUser_phone(String user_phone) {
+        User_phone = user_phone;
     }
 
     public String getAreaName1() {

@@ -12,40 +12,59 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".edit_my_ad_Activity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity android:name=".check_all_messages"></activity>
+        <activity android:name=".message_Activity" />
+        <activity
+            android:name=".edit_my_ad_Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity android:name=".all_ads_Activity" />
-        <activity android:name=".forgotten_change_passwordActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".forgotten_verifyActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".forgotten_passwordActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".my_ads_Activity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".post_an_add_2Activity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".post_an_addActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".look_for_officeActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".look_for_houseActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".updateprofileActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".aboutusActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".registerActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".verifyActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".profileActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".loginActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".signActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".forgotten_change_passwordActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".forgotten_verifyActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".forgotten_passwordActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".my_ads_Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".post_an_add_2Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".post_an_addActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".look_for_officeActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".look_for_houseActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".updateprofileActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".aboutusActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".registerActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".verifyActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".profileActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".loginActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".signActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

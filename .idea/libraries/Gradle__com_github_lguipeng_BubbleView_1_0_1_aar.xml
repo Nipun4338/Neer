@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.lguipeng:BubbleView:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e5b22da6af3185cef5f26ed2963115c/jetified-BubbleView-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e5b22da6af3185cef5f26ed2963115c/jetified-BubbleView-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e5b22da6af3185cef5f26ed2963115c/jetified-BubbleView-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.lguipeng/BubbleView/1.0.1/42a0972629f73d5326212e11168e6987ac5db7d1/BubbleView-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

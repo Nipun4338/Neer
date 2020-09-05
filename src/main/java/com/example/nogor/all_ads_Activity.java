@@ -10,28 +10,39 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Trace;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import androidx.appcompat.widget.SearchView;
+
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 public class all_ads_Activity extends AppCompatActivity {
 
     private RecyclerView myView;
     private DatabaseReference myReference;
+    private FirebaseRecyclerAdapter<Blog1,BlogViewHolder> adapter;
     String user_phone, user_address, user_name, user_email, user_password, user_dp;
+    Button message;
+    FirebaseRecyclerOptions<Blog1> options, options1;
+    Query query;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +90,12 @@ public class all_ads_Activity extends AppCompatActivity {
         myReference= FirebaseDatabase.getInstance().getReference("users").child("ad");
         myReference.keepSynced(true);
 
+        query = FirebaseDatabase.getInstance().getReference("users").child("ad");
+        query.keepSynced(true);
+        options = new FirebaseRecyclerOptions.Builder<Blog1>()
+                .setQuery(query,Blog1.class)
+                .build();
+
         myView=findViewById(R.id.myrecycleview1);
         myView.setHasFixedSize(true);
         myView.setLayoutManager(new LinearLayoutManager(this));
@@ -89,11 +106,19 @@ public class all_ads_Activity extends AppCompatActivity {
     {
         search=search.toLowerCase();
         Query firebaseSearchQuery=myReference.orderByChild("areaName1").startAt(search).endAt(search+"\uf8ff");
+        options1 = new FirebaseRecyclerOptions.Builder<Blog1>()
+                .setQuery(firebaseSearchQuery,Blog1.class)
+                .build();
 
-        FirebaseRecyclerAdapter<Blog1, BlogViewHolder>firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<Blog1, BlogViewHolder>
-                (Blog1.class, R.layout.blog_rows1_layout, BlogViewHolder.class, firebaseSearchQuery) {
+        adapter =new FirebaseRecyclerAdapter<Blog1, all_ads_Activity.BlogViewHolder>
+                (options1) {
             @Override
-            protected void populateViewHolder(BlogViewHolder viewHolder, Blog1 model, int position)
+            public all_ads_Activity.BlogViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+                return new all_ads_Activity.BlogViewHolder(LayoutInflater.from(all_ads_Activity.this)
+                        .inflate(R.layout.blog_rows1_layout,viewGroup,false));
+            }
+            @Override
+            protected void onBindViewHolder(@NonNull all_ads_Activity.BlogViewHolder viewHolder, int position, @NonNull Blog1 model)
             {
                 viewHolder.setdistrictname(model.getDistrict());
                 viewHolder.setadditionaldetails(model.getDescribeHouse());
@@ -102,21 +127,47 @@ public class all_ads_Activity extends AppCompatActivity {
                 viewHolder.setrent(model.getRentCharge());
                 viewHolder.setsize(model.getSizeOfhouse());
                 viewHolder.setareaname(model.getAreaName());
-                viewHolder.setimage(getApplicationContext(), model.getImage());
-            }
-        };
+                if(model.getImage()!=null && model.getImage().length()>0)
+                {
+                    viewHolder.setimage(getApplicationContext(), model.getImage());
+                }
 
-        myView.setAdapter(firebaseRecyclerAdapter);
+                final String key2=model.getKey();
+                final String user_phone=model.getUser_phone();
+                viewHolder.message.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getApplicationContext(), message_Activity.class);
+                        intent.putExtra("key", key2);
+                        intent.putExtra("name", user_name);
+                        intent.putExtra("address", user_address);
+                        intent.putExtra("email", user_email);
+                        intent.putExtra("phone", user_phone);
+                        intent.putExtra("password", user_password);
+                        intent.putExtra("dp", user_dp);
+                        startActivity(intent);
+                    }
+                });
+            }
+
+        };
+        adapter.startListening();
+        myView.setAdapter(adapter);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerAdapter<Blog1, BlogViewHolder>firebaseRecyclerAdapter=new FirebaseRecyclerAdapter<Blog1, BlogViewHolder>
-                (Blog1.class, R.layout.blog_rows1_layout, BlogViewHolder.class, myReference) {
+        adapter=new FirebaseRecyclerAdapter<Blog1, all_ads_Activity.BlogViewHolder>
+                (options) {
             @Override
-            protected void populateViewHolder(BlogViewHolder viewHolder, Blog1 model, int position)
+            public all_ads_Activity.BlogViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+                return new all_ads_Activity.BlogViewHolder(LayoutInflater.from(all_ads_Activity.this)
+                        .inflate(R.layout.blog_rows1_layout,viewGroup,false));
+            }
+            @Override
+            protected void onBindViewHolder(@NonNull all_ads_Activity.BlogViewHolder viewHolder, int position, @NonNull Blog1 model)
             {
                 viewHolder.setdistrictname(model.getDistrict());
                 viewHolder.setadditionaldetails(model.getDescribeHouse());
@@ -125,19 +176,64 @@ public class all_ads_Activity extends AppCompatActivity {
                 viewHolder.setrent(model.getRentCharge());
                 viewHolder.setsize(model.getSizeOfhouse());
                 viewHolder.setareaname(model.getAreaName());
-                viewHolder.setimage(getApplicationContext(), model.getImage());
+                if(model.getImage()!=null && model.getImage().length()>0)
+                {
+                    viewHolder.setimage(getApplicationContext(), model.getImage());
+                }
+
+                final String key2=model.getKey();
+                final DatabaseReference rootRefx = FirebaseDatabase.getInstance().getReference("users");
+                final String[] phoneFromDB = new String[1];
+                final String[] nameFromDB = new String[1];
+                final String[] dpFromDB = new String[1];
+                DatabaseReference reference=rootRefx.child("ad").child(key2);
+                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot snapshot) {
+                        //if (snapshot.hasChild(phone)) {
+                        phoneFromDB[0] = snapshot.child("user_phone").getValue(String.class);
+                        nameFromDB[0] = snapshot.child("user_name").getValue(String.class);
+                        dpFromDB[0] = snapshot.child("user_dp").getValue(String.class);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+                final String user_phone=model.getUser_phone();
+                viewHolder.message.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getApplicationContext(), message_Activity.class);
+                        intent.putExtra("key", key2);
+                        intent.putExtra("name", user_name);
+                        intent.putExtra("address", user_address);
+                        intent.putExtra("email", user_email);
+                        intent.putExtra("phone", user_phone);
+                        intent.putExtra("password", user_password);
+                        intent.putExtra("dp", user_dp);
+                        intent.putExtra("customer_phone", phoneFromDB[0]);
+                        intent.putExtra("customer_name", nameFromDB[0]);
+                        intent.putExtra("customer_dp", dpFromDB[0]);
+                        startActivity(intent);
+                    }
+                });
             }
         };
-
-        myView.setAdapter(firebaseRecyclerAdapter);
+        adapter.startListening();
+        myView.setAdapter(adapter);
     }
     public static class BlogViewHolder extends RecyclerView.ViewHolder
     {
         View mview;
+        Button message;
         public BlogViewHolder(View itemView)
         {
             super(itemView);
             mview=itemView;
+            this.message=itemView.findViewById(R.id.message);
         }
 
         public void setdistrictname(String district)
