@@ -23,6 +23,8 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,6 +32,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class my_ads_Activity extends AppCompatActivity {
 
@@ -42,11 +48,19 @@ public class my_ads_Activity extends AppCompatActivity {
     FirebaseRecyclerOptions<Blog> options;
     Query query;
 
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    private DatabaseReference RootRefz;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_ads_);
         getuserdata();
+        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+        RootRefz = FirebaseDatabase.getInstance().getReference("users");
+
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.action_myads);
@@ -103,6 +117,15 @@ public class my_ads_Activity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
+        if (firebaseUser == null)
+        {
+            finish();
+        }
+        else
+        {
+            updateUserStatus("online");
+        }
 
         adapter=new FirebaseRecyclerAdapter<Blog, BlogViewHolder>
                 (options) {
@@ -162,6 +185,51 @@ public class my_ads_Activity extends AppCompatActivity {
         };
         adapter.startListening();
         myView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+    private void updateUserStatus(String state)
+    {
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+
+        HashMap<String, Object> onlineStateMap = new HashMap<>();
+        onlineStateMap.put("time", saveCurrentTime);
+        onlineStateMap.put("date", saveCurrentDate);
+        onlineStateMap.put("state", state);
+
+        RootRefz.child(firebaseUser.getUid()).child("userState")
+                .updateChildren(onlineStateMap);
+
     }
 
 

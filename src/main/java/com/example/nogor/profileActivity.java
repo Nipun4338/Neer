@@ -19,6 +19,14 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class profileActivity extends AppCompatActivity {
 
@@ -26,6 +34,7 @@ public class profileActivity extends AppCompatActivity {
     String user_address, user_name, user_email, user_phone, user_password, user_dp;
     Button postad, lookforad, lookforbuy, signout;
     TextView name;
+    private DatabaseReference RootRef;
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
@@ -48,6 +57,7 @@ public class profileActivity extends AppCompatActivity {
 
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseUser=firebaseAuth.getCurrentUser();
+        RootRef = FirebaseDatabase.getInstance().getReference("users");
 
         settings=findViewById(R.id.settings);
         settings.setOnClickListener(new View.OnClickListener() {
@@ -147,6 +157,69 @@ public class profileActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+    }
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        if (firebaseUser == null)
+        {
+            finish();
+        }
+        else
+        {
+            updateUserStatus("online");
+
+        }
+    }
+
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+    private void updateUserStatus(String state)
+    {
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+
+        HashMap<String, Object> onlineStateMap = new HashMap<>();
+        onlineStateMap.put("time", saveCurrentTime);
+        onlineStateMap.put("date", saveCurrentDate);
+        onlineStateMap.put("state", state);
+
+        RootRef.child(firebaseUser.getUid()).child("userState")
+                .updateChildren(onlineStateMap);
 
     }
 

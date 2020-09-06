@@ -14,16 +14,23 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class check_all_messages extends AppCompatActivity {
     String user_address, user_name, user_email, user_phone, user_password, user_dp, user_key, customer_name, customer_phone, customer_dp;
@@ -33,12 +40,19 @@ public class check_all_messages extends AppCompatActivity {
     FirebaseRecyclerOptions<chat1> options;
     private RecyclerView myView;
 
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    private DatabaseReference RootRef;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_all_messages);
 
         getuserdata();
+        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+        RootRef = FirebaseDatabase.getInstance().getReference("users");
 
         query = FirebaseDatabase.getInstance().getReference("History").child(user_phone).child(user_key);
         query.keepSynced(true);
@@ -55,6 +69,15 @@ public class check_all_messages extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        if (firebaseUser == null)
+        {
+            finish();
+        }
+        else
+        {
+            updateUserStatus("online");
+        }
+
         adapter=new FirebaseRecyclerAdapter<chat1, check_all_messages.BlogViewHolder>
                 (options) {
             @Override
@@ -70,9 +93,9 @@ public class check_all_messages extends AppCompatActivity {
                 {
                     viewHolder.setimage(getApplicationContext(), model.getDp());
                 }
-                customer_phone=model.getId();
-                customer_name=model.getName();
-                customer_dp=model.getDp();
+                final String customer_phone=model.getId();
+                final String customer_name=model.getName();
+                final String customer_dp=model.getDp();
 
                 //final String user_phone=model.getUser_phone();
                 viewHolder.message.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +112,7 @@ public class check_all_messages extends AppCompatActivity {
                         intent.putExtra("customer_phone", customer_phone);
                         intent.putExtra("customer_name", customer_name);
                         intent.putExtra("customer_dp", customer_dp);
+                        //Toast.makeText(check_all_messages.this, user_phone, Toast.LENGTH_SHORT).show();
                         startActivity(intent);
                     }
                 });
@@ -96,6 +120,52 @@ public class check_all_messages extends AppCompatActivity {
         };
         adapter.startListening();
         myView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+    private void updateUserStatus(String state)
+    {
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+
+        HashMap<String, Object> onlineStateMap = new HashMap<>();
+        onlineStateMap.put("time", saveCurrentTime);
+        onlineStateMap.put("date", saveCurrentDate);
+        onlineStateMap.put("state", state);
+
+        RootRef.child(firebaseUser.getUid()).child("userState")
+                .updateChildren(onlineStateMap);
+
     }
 
     public static class BlogViewHolder extends RecyclerView.ViewHolder

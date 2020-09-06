@@ -14,9 +14,15 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class post_an_addActivity extends AppCompatActivity {
     EditText areaname, sizeofhouse, rentcharge, describehouse, extracontact;
@@ -24,11 +30,19 @@ public class post_an_addActivity extends AppCompatActivity {
     Switch switch1;
     Button rent;
     String text;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    private DatabaseReference RootRefz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_an_add);
+
+        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+        RootRefz = FirebaseDatabase.getInstance().getReference("users");
+
         sizeofhouse=findViewById(R.id.sizeofhouse);
         areaname=findViewById(R.id.areaname);
         rentcharge=findViewById(R.id.rentcharge);
@@ -100,6 +114,68 @@ public class post_an_addActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        if (firebaseUser == null)
+        {
+            finish();
+        }
+        else
+        {
+            updateUserStatus("online");
+
+        }
+    }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+    private void updateUserStatus(String state)
+    {
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+
+        HashMap<String, Object> onlineStateMap = new HashMap<>();
+        onlineStateMap.put("time", saveCurrentTime);
+        onlineStateMap.put("date", saveCurrentDate);
+        onlineStateMap.put("state", state);
+
+        RootRefz.child(firebaseUser.getUid()).child("userState")
+                .updateChildren(onlineStateMap);
+
     }
 
     private void getuserdata() {

@@ -24,6 +24,8 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,6 +36,10 @@ import androidx.appcompat.widget.SearchView;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.HashMap;
+
 public class all_ads_Activity extends AppCompatActivity {
 
     private RecyclerView myView;
@@ -43,6 +49,9 @@ public class all_ads_Activity extends AppCompatActivity {
     Button message;
     FirebaseRecyclerOptions<Blog1> options, options1;
     Query query;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    private DatabaseReference RootRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,9 @@ public class all_ads_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_all_ads_);
         getuserdata();
 
+        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+        RootRef = FirebaseDatabase.getInstance().getReference("users");
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.action_allads);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -159,6 +171,15 @@ public class all_ads_Activity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        if (firebaseUser == null)
+        {
+            finish();
+        }
+        else
+        {
+            updateUserStatus("online");
+        }
+
         adapter=new FirebaseRecyclerAdapter<Blog1, all_ads_Activity.BlogViewHolder>
                 (options) {
             @Override
@@ -225,6 +246,53 @@ public class all_ads_Activity extends AppCompatActivity {
         adapter.startListening();
         myView.setAdapter(adapter);
     }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+    private void updateUserStatus(String state)
+    {
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+
+        HashMap<String, Object> onlineStateMap = new HashMap<>();
+        onlineStateMap.put("time", saveCurrentTime);
+        onlineStateMap.put("date", saveCurrentDate);
+        onlineStateMap.put("state", state);
+
+        RootRef.child(firebaseUser.getUid()).child("userState")
+                .updateChildren(onlineStateMap);
+
+    }
+
     public static class BlogViewHolder extends RecyclerView.ViewHolder
     {
         View mview;

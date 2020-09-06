@@ -29,6 +29,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -58,7 +59,7 @@ public class message_Activity extends AppCompatActivity {
 
     private Toolbar ChatToolBar;
     private FirebaseAuth mAuth;
-    private DatabaseReference RootRef, RootRef1;
+    private DatabaseReference RootRef, RootRef1, RootRef2;
 
     private FloatingActionButton SendMessageButton, SendFilesButton;
     private EditText MessageInputText;
@@ -67,6 +68,9 @@ public class message_Activity extends AppCompatActivity {
     private LinearLayoutManager linearLayoutManager;
     private MessageAdapter messageAdapter;
     private RecyclerView userMessagesList;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    private DatabaseReference RootRefz;
 
 
     private String saveCurrentTime, saveCurrentDate;
@@ -80,8 +84,13 @@ public class message_Activity extends AppCompatActivity {
         getuserdata();
         mAuth = FirebaseAuth.getInstance();
         messageSenderID = mAuth.getCurrentUser().getUid();
+        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+        RootRefz = FirebaseDatabase.getInstance().getReference("users");
+
         RootRef = FirebaseDatabase.getInstance().getReference("Messages");
         RootRef1 = FirebaseDatabase.getInstance().getReference("History");
+        RootRef2 = FirebaseDatabase.getInstance().getReference("users");
 
         messageReceiverID = customer_phone;
         messageReceiverName = customer_name;
@@ -105,7 +114,42 @@ public class message_Activity extends AppCompatActivity {
             }
         });
 
+        DisplayLastSeen();
+    }
 
+    private void DisplayLastSeen()
+    {
+        RootRef2.child(messageReceiverID)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot)
+                    {
+                        //if (dataSnapshot.child("userState").hasChild("state"))
+                        {
+                            String state = dataSnapshot.child("userState").child("state").getValue().toString();
+                            String date = dataSnapshot.child("userState").child("date").getValue().toString();
+                            String time = dataSnapshot.child("userState").child("time").getValue().toString();
+
+                            if (state.equals("online"))
+                            {
+                                userLastSeen.setText("online");
+                            }
+                            else if (state.equals("offline"))
+                            {
+                                userLastSeen.setText("Last Seen: " + date + " " + time);
+                            }
+                        }
+                        /*else
+                        {
+                            userLastSeen.setText("offline");
+                        }*/
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
     }
 
     private void IntializeControllers()
@@ -148,21 +192,15 @@ public class message_Activity extends AppCompatActivity {
     protected void onStart()
     {
         super.onStart();
-        /*RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot snapshot) {
-                if (snapshot.getValue() == null) {
-                    // The child doesn't exist
-                    RootRef.child(messageSenderID).setValue(null);
-                    RootRef.child(messageSenderID).child(messageReceiverID).setValue(null);
-                }
-            }
+        if (firebaseUser == null)
+        {
+            finish();
+        }
+        else
+        {
+            updateUserStatus("online");
+        }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });*/
         RootRef.child(messageSenderID).child(messageReceiverID)
                 .addChildEventListener(new ChildEventListener() {
                     @Override
@@ -197,6 +235,52 @@ public class message_Activity extends AppCompatActivity {
 
                     }
                 });
+    }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (firebaseUser != null)
+        {
+            updateUserStatus("offline");
+        }
+    }
+
+    private void updateUserStatus(String state)
+    {
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
+        saveCurrentTime = currentTime.format(calendar.getTime());
+
+        HashMap<String, Object> onlineStateMap = new HashMap<>();
+        onlineStateMap.put("time", saveCurrentTime);
+        onlineStateMap.put("date", saveCurrentDate);
+        onlineStateMap.put("state", state);
+
+        RootRefz.child(firebaseUser.getUid()).child("userState")
+                .updateChildren(onlineStateMap);
+
     }
 
 
