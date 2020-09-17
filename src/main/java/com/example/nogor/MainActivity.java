@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,15 +25,44 @@ public class MainActivity extends AppCompatActivity {
 
     private Button login;
     private Button signup;
-    TextView example1;
+    ImageView example1;
+    private static final long ONE_SECOND = 1000L;
+    private static final int MISS_LIMIT = 1;
+    int misses = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        example1=findViewById(R.id.example1);
+        example1=findViewById(R.id.imageView10);
 
+        final Handler handler = new Handler();
+        final Runnable timer = new Runnable() {
+            @Override
+            public void run() {
+                // user too late: increment miss counter
+                if (++misses >= MISS_LIMIT) {
+                    //TODO miss limit reached
+                    call();
+                }
+            }
+        };
+        handler.removeCallbacks(timer);
+        handler.postDelayed(timer, ONE_SECOND);
+
+        example1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                handler.removeCallbacks(timer);
+                startActivity(new Intent(MainActivity.this,aboutusActivity.class));
+            }
+        });
+
+    }
+
+    void call()
+    {
         if(FirebaseAuth.getInstance().getCurrentUser() == null)
         {
             startActivity(new Intent(MainActivity.this, loginActivity.class));
@@ -47,36 +78,36 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot snapshot) {
                     //if (snapshot.hasChild(phone)) {
-                        String nameFromDB = snapshot.child("name").getValue(String.class);
-                        String addressFromDB = snapshot.child("address").getValue(String.class);
-                        String phoneFromDB = snapshot.child("phone").getValue(String.class);
-                        String emailFromDB = snapshot.child("email").getValue(String.class);
-                        String passwordFromDB = snapshot.child("password").getValue(String.class);
-                        String dpFromDB = snapshot.child("dp").getValue(String.class);
+                    String nameFromDB = snapshot.child("name").getValue(String.class);
+                    String addressFromDB = snapshot.child("address").getValue(String.class);
+                    String phoneFromDB = snapshot.child("phone").getValue(String.class);
+                    String emailFromDB = snapshot.child("email").getValue(String.class);
+                    String passwordFromDB = snapshot.child("password").getValue(String.class);
+                    String dpFromDB = snapshot.child("dp").getValue(String.class);
 
-                        Intent intent = new Intent(getApplicationContext(), profileActivity.class);
-                        intent.putExtra("name", nameFromDB);
-                        intent.putExtra("address", addressFromDB);
-                        intent.putExtra("email", emailFromDB);
-                        intent.putExtra("phone", phoneFromDB);
-                        intent.putExtra("password", passwordFromDB);
-                        if(dpFromDB==null || dpFromDB.length()==0)
-                        {
-                            intent.putExtra("dp", "");
-                        }
-                        else
-                        {
-                            intent.putExtra("dp", dpFromDB);
-                        }
-                        if(nameFromDB.length()==0 || addressFromDB.length()==0 || phoneFromDB.length()==0)
-                        {
-                            Intent intent1 = new Intent(MainActivity.this, loginActivity.class);
-                            startActivity(intent1);
-                            finish();
-                        }
-                        Toast.makeText(MainActivity.this, "Welcome "+nameFromDB+"!", Toast.LENGTH_SHORT).show();
-                        startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), profileActivity.class);
+                    intent.putExtra("name", nameFromDB);
+                    intent.putExtra("address", addressFromDB);
+                    intent.putExtra("email", emailFromDB);
+                    intent.putExtra("phone", phoneFromDB);
+                    intent.putExtra("password", passwordFromDB);
+                    if(dpFromDB==null || dpFromDB.length()==0)
+                    {
+                        intent.putExtra("dp", "");
+                    }
+                    else
+                    {
+                        intent.putExtra("dp", dpFromDB);
+                    }
+                    if(nameFromDB.length()==0 || addressFromDB.length()==0 || phoneFromDB.length()==0)
+                    {
+                        Intent intent1 = new Intent(MainActivity.this, loginActivity.class);
+                        startActivity(intent1);
                         finish();
+                    }
+                    Toast.makeText(MainActivity.this, "Welcome "+nameFromDB+"!", Toast.LENGTH_SHORT).show();
+                    startActivity(intent);
+                    finish();
                     //} else {
                         /*Intent intent = new Intent(MainActivity.this, loginActivity.class);
                         startActivity(intent);
@@ -90,19 +121,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
     }
 
-    public void perform_action(View v)
+    /*public void perform_action(View v)
     {
-        TextView tv= (TextView) findViewById(R.id.aboutus);
+        ImageView tv= (ImageView) findViewById(R.id.imageView10);
 
         //alter text of textview widget
-        tv.setText("About Us");
+        //tv.setText("About Us");
 
         //assign the textview forecolor
-        tv.setTextColor(Color.GREEN);
+        //tv.setTextColor(Color.GREEN);
         startActivity(new Intent(MainActivity.this,aboutusActivity.class));
-    }
+    }*/
 
 }

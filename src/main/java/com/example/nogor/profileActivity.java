@@ -52,7 +52,7 @@ public class profileActivity extends AppCompatActivity {
         lookforad=findViewById(R.id.lookforad);
         lookforbuy=findViewById(R.id.lookforbuy);
         signout=findViewById(R.id.signout);
-        name=findViewById(R.id.textView6);
+        name=findViewById(R.id.textView5);
         dp=findViewById(R.id.dp);
 
         firebaseAuth=FirebaseAuth.getInstance();
@@ -73,7 +73,7 @@ public class profileActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        name.setText(user_name+"!");
+        name.setText("Welcome "+user_name+"!");
         if(user_dp!=null && user_dp.length()>0)
         {
             setimage(user_dp);

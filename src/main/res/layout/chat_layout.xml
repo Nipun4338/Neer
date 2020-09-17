@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="730dp"
         android:background="@color/black"
         android:orientation="vertical">
 
@@ -25,18 +25,35 @@
         <TextView
             android:id="@+id/Name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:text="Name:"
             android:textColor="#ffff"
             android:textSize="30dp" />
 
+        <TextView
+            android:id="@+id/ContractInfo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:text="Contract Information:"
+            android:textColor="#ffff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/districtname"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="District:"
+            android:textColor="#ffff"
+            android:textSize="30dp" />
+
+
         <Button
+            android:id="@+id/sent_messages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/sent_messages"
-            android:background="#444"
-            android:text="Sent messages"
-            />
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="Send messages" />
 
     </LinearLayout>
 

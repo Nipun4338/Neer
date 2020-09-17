@@ -4,70 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/custom">
+    android:background="@drawable/skyline_copied"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="401dp"
-        android:layout_height="203dp"
-        android:text="neer"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="160dp"
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="603dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="312dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.592"
+        app:srcCompat="@drawable/logu" />
 
-    <TextView
-        android:layout_width="157dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="236dp"
-        android:text="houserent solution"
-        android:textColor="@color/white"
-        android:textSize="18dp"
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="218dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="193dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/about_us"
+        android:onClick="perform_action"/>
 
 
-
-    <TextView
-        android:layout_width="124dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="16dp"
-        android:text="About Us"
-        android:id="@+id/aboutus"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <!--<Button
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="448dp"
+        android:background="@color/white"
+        android:text="login"
+        android:textColor="@color/green"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957"
-        android:onClick="perform_action"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/example1"
-        android:layout_width="413dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="504dp"
+        android:background="@color/green"
+        android:text="Sign Up"
         android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintTop_toTopOf="parent" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

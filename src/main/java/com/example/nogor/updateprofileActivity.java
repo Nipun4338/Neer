@@ -249,10 +249,10 @@ public class updateprofileActivity extends AppCompatActivity {
 
     public void perform_action(View v)
     {
-        TextView tv= (TextView) findViewById(R.id.pic);
+        Button tv= (Button) findViewById(R.id.addPhoto);
 
         //alter text of textview widget
-        tv.setText("Add a profile photo");
+        //tv.setText("Add a profile photo");
 
         //assign the textview forecolor
         //tv.setTextColor(Color.GREEN);
