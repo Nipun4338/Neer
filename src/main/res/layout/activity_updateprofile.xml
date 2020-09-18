@@ -204,7 +204,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:onClick="perform_action"/>
 
     <ImageView
         android:id="@+id/imageView8"
