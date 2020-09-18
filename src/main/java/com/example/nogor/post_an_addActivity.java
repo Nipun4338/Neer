@@ -51,7 +51,6 @@ public class post_an_addActivity extends AppCompatActivity {
         switch1=findViewById(R.id.switch1);
         rent=findViewById(R.id.rent);
 
-
         final Spinner spinner=(Spinner)findViewById(R.id.districtname);
 
         String[] dist=getResources().getStringArray(R.array.bd_districts);
@@ -91,6 +90,40 @@ public class post_an_addActivity extends AppCompatActivity {
               else
               {
                   bergain="No";
+              }
+
+              if(areaName.length()==0 || sizeOfhouse.length()==0 || rentCharge.length()==0 || describeHouse.length()==0 || extraContact.length()==0)
+              {
+                  if(areaName.length()==0)
+                  {
+                      areaname.setError("Field cannot be empty");
+                      areaname.requestFocus();
+                      return;
+                  }
+                  if(sizeOfhouse.length()==0)
+                  {
+                      sizeofhouse.setError("Field cannot be empty");
+                      sizeofhouse.requestFocus();
+                      return;
+                  }
+                  if(rentCharge.length()==0)
+                  {
+                      rentcharge.setError("Field cannot be empty");
+                      rentcharge.requestFocus();
+                      return;
+                  }
+                  if(describeHouse.length()==0)
+                  {
+                      describehouse.setError("Field cannot be empty");
+                      describehouse.requestFocus();
+                      return;
+                  }
+                  if(extraContact.length()==0)
+                  {
+                      extracontact.setError("Field cannot be empty");
+                      extracontact.requestFocus();
+                      return;
+                  }
               }
                 String key="";
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad"); //user profile ad

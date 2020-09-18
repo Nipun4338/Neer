@@ -32,6 +32,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class check_all_messages extends AppCompatActivity {
     String user_address, user_name, user_email, user_phone, user_password, user_dp, user_key, customer_name, customer_phone, customer_dp;
     Query query;
@@ -186,7 +188,7 @@ public class check_all_messages extends AppCompatActivity {
         }
         public void setimage(Context ctx, String image)
         {
-            ImageView image1=mview.findViewById(R.id.profile_image);
+            CircleImageView image1=mview.findViewById(R.id.profile_image);
             //Picasso.with(ctx).load(image).into(image1);
             Glide.with(ctx).load(image).into(image1);
         }
