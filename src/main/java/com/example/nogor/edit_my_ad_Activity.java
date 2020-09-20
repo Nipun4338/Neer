@@ -384,6 +384,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
 
         if(filePath != null)
         {
+            flag=1;
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
@@ -404,7 +405,6 @@ public class edit_my_ad_Activity extends AppCompatActivity {
                                         reference.setValue(url);
                                         DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad").child(key).child("image");
                                         reference1.setValue(url);
-                                        flag=1;
                                     }
                                 });
                             }
