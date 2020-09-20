@@ -132,17 +132,22 @@ public class profileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), all_ads_Activity.class);
+                intent.putExtra("name", user_name);
+                intent.putExtra("address", user_address);
+                intent.putExtra("email", user_email);
                 intent.putExtra("phone", user_phone);
+                intent.putExtra("password", user_password);
+                intent.putExtra("dp", user_dp);
                 startActivity(intent);
             }
         });
 
-        lookforbuy.setOnClickListener(new View.OnClickListener() {
+        /*lookforbuy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(profileActivity.this, look_for_houseActivity.class));
             }
-        });
+        });*/
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.action_home);

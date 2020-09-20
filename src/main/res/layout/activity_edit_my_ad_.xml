@@ -23,6 +23,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
         <ImageView
             android:id="@+id/post_image1"
             android:layout_width="match_parent"
@@ -30,6 +34,16 @@
             android:background="@drawable/d"
             android:onClick="perform_action"
             android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Tap to change Image"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+        </FrameLayout>
+
 
         <EditText
             android:id="@+id/rent_money1"
