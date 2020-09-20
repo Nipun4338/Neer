@@ -91,19 +91,43 @@ public class message_Activity extends AppCompatActivity {
         RootRef = FirebaseDatabase.getInstance().getReference("Messages");
         RootRef1 = FirebaseDatabase.getInstance().getReference("History");
         RootRef2 = FirebaseDatabase.getInstance().getReference("users");
+        RootRef.keepSynced(true);
+        RootRef1.keepSynced(true);
+        RootRef2.keepSynced(true);
+
 
         messageReceiverID = customer_phone;
         messageReceiverName = customer_name;
         messageReceiverImage = customer_dp;
+        RootRef2.child(messageReceiverID)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot)
+                    {
+                        //if (dataSnapshot.child("userState").hasChild("state"))
+                        {
+                            String dp1 = dataSnapshot.child("dp").getValue().toString();
+                            messageReceiverImage=dp1;
+                            userName.setText(messageReceiverName);
+                            if(messageReceiverImage!=null && messageReceiverImage.length()>0)
+                            {
+                                Picasso.get().load(messageReceiverImage).placeholder(R.drawable.profile).into(userImage);
+                            }
+                        }
+                        /*else
+                        {
+                            userLastSeen.setText("offline");
+                        }*/
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
 
         IntializeControllers();
-
-
-        userName.setText(messageReceiverName);
-        if(messageReceiverImage!=null && messageReceiverImage.length()>0)
-        {
-            Picasso.get().load(messageReceiverImage).placeholder(R.drawable.profile).into(userImage);
-        }
 
 
         SendMessageButton.setOnClickListener(new View.OnClickListener() {

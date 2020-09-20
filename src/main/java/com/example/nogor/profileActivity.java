@@ -20,9 +20,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -34,7 +36,7 @@ public class profileActivity extends AppCompatActivity {
     String user_address, user_name, user_email, user_phone, user_password, user_dp;
     Button postad, lookforad, lookforbuy, signout;
     TextView name;
-    private DatabaseReference RootRef;
+    private DatabaseReference RootRef, RootRef2;
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
@@ -74,10 +76,31 @@ public class profileActivity extends AppCompatActivity {
             }
         });
         name.setText("Welcome "+user_name+"!");
-        if(user_dp!=null && user_dp.length()>0)
-        {
-            setimage(user_dp);
-        }
+        RootRef2 = FirebaseDatabase.getInstance().getReference("users");
+        RootRef2.child(user_phone)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot)
+                    {
+                        //if (dataSnapshot.child("userState").hasChild("state"))
+                        {
+                            user_dp = dataSnapshot.child("dp").getValue().toString();
+                            if(user_dp!=null && user_dp.length()>0)
+                            {
+                                setimage(user_dp);
+                            }
+                        }
+                        /*else
+                        {
+                            userLastSeen.setText("offline");
+                        }*/
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
 
 
         signout.setOnClickListener(new View.OnClickListener() {

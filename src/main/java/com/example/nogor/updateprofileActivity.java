@@ -99,8 +99,8 @@ public class updateprofileActivity extends AppCompatActivity {
                 //update=findViewById(R.id.update);
 
                 reference= FirebaseDatabase.getInstance().getReference("users");
-                updatedata();
                 uploadImage();
+                updatedata();
             }
         });
 
@@ -183,8 +183,8 @@ public class updateprofileActivity extends AppCompatActivity {
         isemailchanged();
         isaddresschanged();
         ispasswordchanged();
-        sum+=flag;
         //Toast.makeText(updateprofileActivity.this, sum, Toast.LENGTH_SHORT).show();
+        sum+=flag;
         if(sum>0)
         {
             Toast.makeText(updateprofileActivity.this, "Account data has been updated!", Toast.LENGTH_SHORT).show();
@@ -280,10 +280,12 @@ public class updateprofileActivity extends AppCompatActivity {
     private void uploadImage() {
 
         if (filePath != null) {
-            final ProgressDialog progressDialog = new ProgressDialog(this);
-            progressDialog.setTitle("Uploading...");
-            progressDialog.show();
+            flag=1;
             Uri individula_image=Imagelist.get(0);
+            final ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            progressDialog.setMessage("Uploading...");
+            progressDialog.show();
             final StorageReference ref = storageReference.child(individula_image.getLastPathSegment());
             ref.putFile(individula_image)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -297,7 +299,6 @@ public class updateprofileActivity extends AppCompatActivity {
                                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(phone).child("dp");
                                 //reference.child("image").setValue(url);
                                 reference.setValue(pic);
-                                flag=1;
                             }
                         });
                         //Toast.makeText(post_an_add_2Activity.this, "Uploaded", Toast.LENGTH_SHORT).show();
