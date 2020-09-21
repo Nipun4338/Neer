@@ -25,7 +25,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 public class post_an_addActivity extends AppCompatActivity {
-    EditText areaname, sizeofhouse, rentcharge, describehouse, extracontact;
+    EditText areaname, detailedareaname, sizeofhouse, rentcharge, describehouse, extracontact;
     String user_address, user_name, user_email, user_phone, user_password, user_dp;
     Switch switch1;
     Button rent;
@@ -50,6 +50,7 @@ public class post_an_addActivity extends AppCompatActivity {
         extracontact=findViewById(R.id.extracontact);
         switch1=findViewById(R.id.switch1);
         rent=findViewById(R.id.rent);
+        detailedareaname=findViewById(R.id.detailedareaname);
 
         final Spinner spinner=(Spinner)findViewById(R.id.districtname);
 
@@ -76,12 +77,14 @@ public class post_an_addActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
               String  areaName=areaname.getText().toString();
-              String areaName1=areaName.toLowerCase();
+              String  areaName1=areaName.toLowerCase();
+              String  detailedareaName=detailedareaname.getText().toString();
               String  sizeOfhouse=sizeofhouse.getText().toString();
               String  rentCharge=rentcharge.getText().toString();
               String  describeHouse=describehouse.getText().toString();
               String  extraContact=extracontact.getText().toString();
               String distRict=text;
+              String district1=distRict.toLowerCase();
               String bergain;
               if(switch1.isChecked())
               {
@@ -92,7 +95,7 @@ public class post_an_addActivity extends AppCompatActivity {
                   bergain="No";
               }
 
-              if(areaName.length()==0 || sizeOfhouse.length()==0 || rentCharge.length()==0 || describeHouse.length()==0 || extraContact.length()==0)
+              if(areaName.length()==0 || sizeOfhouse.length()==0 || rentCharge.length()==0 || describeHouse.length()==0 || extraContact.length()==0 || detailedareaName.length()==0)
               {
                   if(areaName.length()==0)
                   {
@@ -104,6 +107,12 @@ public class post_an_addActivity extends AppCompatActivity {
                   {
                       sizeofhouse.setError("Field cannot be empty");
                       sizeofhouse.requestFocus();
+                      return;
+                  }
+                  if(detailedareaName.length()==0)
+                  {
+                      detailedareaname.setError("Field cannot be empty");
+                      detailedareaname.requestFocus();
                       return;
                   }
                   if(rentCharge.length()==0)
@@ -129,7 +138,8 @@ public class post_an_addActivity extends AppCompatActivity {
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users").child(user_phone).child("ad"); //user profile ad
                 DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("users").child("ad");  //universal ad
                 key=reference1.push().getKey();
-                User user=new User(areaName, areaName1, sizeOfhouse, rentCharge, describeHouse, extraContact, distRict, bergain, key, user_phone, user_name, user_dp);
+                String x=district1+"_"+areaName1;
+                User user=new User(areaName, areaName1, detailedareaName, sizeOfhouse, rentCharge, describeHouse, extraContact, distRict, district1, bergain, key, user_phone, user_name, user_dp, x);
                 reference.child(key).setValue(user);
                 reference1.child(key).setValue(user);
 

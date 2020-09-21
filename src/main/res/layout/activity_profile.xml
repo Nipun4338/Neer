@@ -69,12 +69,12 @@
         tools:ignore="DuplicateIds" />
 
     <Button
-        android:id="@+id/lookforbuy"
+        android:id="@+id/search"
         android:layout_width="255dp"
         android:layout_height="55dp"
         android:layout_marginStart="148dp"
         android:background="@drawable/rounded_button"
-        android:text="Look for New Home"
+        android:text="Advanced Search"
         android:textColor="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -1,17 +1,19 @@
 package com.example.nogor;
 
 public class User {
-    String sizeOfhouse, areaName, areaName1, rentCharge, describeHouse, extraContact, district, bergain, key, user_phone, user_name, user_dp;
+    String sizeOfhouse, areaName, areaName1, detailedareaName, rentCharge, describeHouse, extraContact, district, district1, bergain, key, user_phone, user_name, user_dp, x;
 
     public User()
     {
 
     }
 
-    public User(String areaName, String areaName1, String sizeOfhouse, String rentCharge, String describeHouse, String extraContact, String district, String bergain, String key, String user_phone, String user_name, String user_dp) {
+    public User(String areaName, String areaName1, String detailedareaName, String sizeOfhouse, String rentCharge, String describeHouse, String extraContact, String district, String district1, String bergain, String key, String user_phone, String user_name, String user_dp, String x) {
         this.sizeOfhouse = sizeOfhouse;
         this.areaName = areaName;
         this.areaName1 = areaName1;
+        this.detailedareaName=detailedareaName;
+        this.district1=district1;
         this.rentCharge = rentCharge;
         this.describeHouse = describeHouse;
         this.extraContact = extraContact;
@@ -21,6 +23,31 @@ public class User {
         this.user_phone=user_phone;
         this.user_name=user_name;
         this.user_dp=user_dp;
+        this.x=x;
+    }
+
+    public String getX() {
+        return x;
+    }
+
+    public void setX(String x) {
+        this.x = x;
+    }
+
+    public String getDetailedareaName() {
+        return detailedareaName;
+    }
+
+    public void setDetailedareaName(String detailedareaName) {
+        this.detailedareaName = detailedareaName;
+    }
+
+    public String getDistrict1() {
+        return district1;
+    }
+
+    public void setDistrict1(String district1) {
+        this.district1 = district1;
     }
 
     public String getUser_name() {

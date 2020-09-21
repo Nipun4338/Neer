@@ -43,7 +43,7 @@ public class my_ads_Activity extends AppCompatActivity {
     private DatabaseReference myReference;
     private FirebaseRecyclerAdapter<Blog,BlogViewHolder> adapter;
 
-    String key1, user_phone, user_address, user_name, user_email, user_password, user_dp;
+    String key1, user_phone, user_address, user_name, user_email, user_password, user_dp, detailedarea;
     Button edit_ad;
     FirebaseRecyclerOptions<Blog> options;
     Query query;
@@ -143,7 +143,8 @@ public class my_ads_Activity extends AppCompatActivity {
                 viewHolder.setcontact(model.getExtraContact());
                 viewHolder.setrent(model.getRentCharge());
                 viewHolder.setsize(model.getSizeOfhouse());
-                viewHolder.setareaname(model.getAreaName());
+                detailedarea=model.getDetailedareaName().toString();
+                viewHolder.setareaname(detailedarea, model.getAreaName());
                 if(model.getImage()!=null && model.getImage().length()>0)
                 {
                     viewHolder.setimage(getApplicationContext(), model.getImage());
@@ -275,10 +276,10 @@ public class my_ads_Activity extends AppCompatActivity {
             TextView size1=mview.findViewById(R.id.areasize);
             size1.setText("Area size:- "+size);
         }
-        public void setareaname(String areaname1)
+        public void setareaname(String detailedarea, String areaname1)
         {
             TextView areaname=mview.findViewById(R.id.areaNamex);
-            areaname.setText("Area Name:- "+areaname1);
+            areaname.setText("Area Name:- "+detailedarea+" , "+areaname1);
         }
         public void setimage(Context ctx, String image)
         {

@@ -34,7 +34,7 @@ public class profileActivity extends AppCompatActivity {
 
     ImageView settings, dp;
     String user_address, user_name, user_email, user_phone, user_password, user_dp;
-    Button postad, lookforad, lookforbuy, signout;
+    Button postad, lookforad, search, signout;
     TextView name;
     private DatabaseReference RootRef, RootRef2;
 
@@ -52,7 +52,7 @@ public class profileActivity extends AppCompatActivity {
 
         postad=findViewById(R.id.postad);
         lookforad=findViewById(R.id.lookforad);
-        lookforbuy=findViewById(R.id.lookforbuy);
+        search=findViewById(R.id.search);
         signout=findViewById(R.id.signout);
         name=findViewById(R.id.textView5);
         dp=findViewById(R.id.dp);
@@ -142,12 +142,19 @@ public class profileActivity extends AppCompatActivity {
             }
         });
 
-        /*lookforbuy.setOnClickListener(new View.OnClickListener() {
+        search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(profileActivity.this, look_for_houseActivity.class));
+                Intent intent = new Intent(getApplicationContext(), searchActivity.class);
+                intent.putExtra("name", user_name);
+                intent.putExtra("address", user_address);
+                intent.putExtra("email", user_email);
+                intent.putExtra("phone", user_phone);
+                intent.putExtra("password", user_password);
+                intent.putExtra("dp", user_dp);
+                startActivity(intent);
             }
-        });*/
+        });
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.action_home);
