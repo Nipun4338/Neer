@@ -23,48 +23,15 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button login;
-    private Button signup;
-    ImageView example1;
-    private static final long ONE_SECOND = 1000L;
-    private static final int MISS_LIMIT = 1;
-    int misses = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        //example1=findViewById(R.id.imageView10);
 
-        final Handler handler = new Handler();
-        final Runnable timer = new Runnable() {
-            @Override
-            public void run() {
-                // user too late: increment miss counter
-                if (++misses >= MISS_LIMIT) {
-                    //TODO miss limit reached
-                    call();
-                }
-            }
-        };
-        handler.removeCallbacks(timer);
-        handler.postDelayed(timer, ONE_SECOND);
-
-        /*example1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                handler.removeCallbacks(timer);
-                startActivity(new Intent(MainActivity.this,aboutusActivity.class));
-            }
-        });*/
-
-    }
-
-    void call()
-    {
+        //Toast.makeText(MainActivity.this, "13", Toast.LENGTH_SHORT).show();
         if(FirebaseAuth.getInstance().getCurrentUser() == null)
         {
+           // Toast.makeText(MainActivity.this, "14", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(MainActivity.this, loginActivity.class));
             finish();
         }
@@ -84,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     String emailFromDB = snapshot.child("email").getValue(String.class);
                     String passwordFromDB = snapshot.child("password").getValue(String.class);
                     String dpFromDB = snapshot.child("dp").getValue(String.class);
+                    Toast.makeText(MainActivity.this, "14", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(getApplicationContext(), profileActivity.class);
                     intent.putExtra("name", nameFromDB);
@@ -121,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
     }
+
 
     /*public void perform_action(View v)
     {

@@ -3,19 +3,28 @@ package com.example.nogor;
 import android.widget.EditText;
 
 public class userHelperClass {
-    String name, password, email, address, phone;
+    String name, password, email, address, phone, dp;
 
     public userHelperClass()
     {
 
     }
 
-    public userHelperClass(String name, String password, String email, String address, String phone) {
+    public userHelperClass(String name, String password, String email, String address, String phone, String dp) {
         this.name = name;
         this.password = password;
         this.email = email;
         this.address = address;
         this.phone = phone;
+        this.dp=dp;
+    }
+
+    public String getDp() {
+        return dp;
+    }
+
+    public void setDp(String dp) {
+        this.dp = dp;
     }
 
     public String getName() {

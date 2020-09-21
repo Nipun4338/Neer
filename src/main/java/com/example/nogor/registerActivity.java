@@ -46,6 +46,7 @@ public class registerActivity extends AppCompatActivity {
                 String password1=password.getText().toString();
                 String email1=email.getText().toString();
                 String address1=address.getText().toString();
+                String dp="";
 
                 FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
 
@@ -73,7 +74,7 @@ public class registerActivity extends AppCompatActivity {
                 else
                 {
                     String phone = user.getUid();
-                    userHelperClass helperClass=new userHelperClass(name1, password1, email1,address1, phone);
+                    userHelperClass helperClass=new userHelperClass(name1, password1, email1, address1, phone, dp);
                     reference.child(phone).setValue(helperClass);
                     Toast.makeText(registerActivity.this, "Account Successfully Created!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), profileActivity.class);

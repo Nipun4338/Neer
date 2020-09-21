@@ -97,6 +97,13 @@ public class loginActivity extends AppCompatActivity {
                         String nameFromDB = snapshot.child("users").child(phone).child("name").getValue(String.class);
                         String addressFromDB = snapshot.child("users").child(phone).child("address").getValue(String.class);
                         String phoneFromDB = snapshot.child("users").child(phone).child("phone").getValue(String.class);
+                        if (phoneFromDB == null || phoneFromDB.length() <= 0)
+                        {
+                            Toast.makeText(loginActivity.this, "13", Toast.LENGTH_SHORT).show();
+                            Intent intent1 = new Intent(loginActivity.this, registerActivity.class);
+                            startActivity(intent1);
+                            finish();
+                        }
                         String emailFromDB = snapshot.child("users").child(phone).child("email").getValue(String.class);
                         String passwordFromDB = snapshot.child("users").child(phone).child("password").getValue(String.class);
                         String dpFromDB = snapshot.child("users").child(phone).child("dp").getValue(String.class);
@@ -115,12 +122,8 @@ public class loginActivity extends AppCompatActivity {
                             intent.putExtra("dp", dpFromDB);
                         }
                         if (phoneFromDB !=null && phoneFromDB.length()> 0) {
-                            Toast.makeText(loginActivity.this, "Welcome "+nameFromDB+"!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(loginActivity.this, "Welcome " + nameFromDB + "!", Toast.LENGTH_SHORT).show();
                             startActivity(intent);
-                            finish();
-                        } else {
-                            Intent intent1 = new Intent(loginActivity.this, registerActivity.class);
-                            startActivity(intent1);
                             finish();
                         }
                     }
