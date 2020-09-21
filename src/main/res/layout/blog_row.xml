@@ -12,13 +12,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="690dp"
-        android:background="@color/black"
+        android:background="#CCD1D1"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/post_image"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="279dp"
             android:background="@drawable/d"
             android:scaleType="fitXY" />
 
@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:text="Money"
-            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="30dp" />
 
         <TextView
@@ -35,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="District"
-            android:textColor="#ffff"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="23dp"/>
 
         <TextView
@@ -43,39 +45,44 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="Area"
-            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="23dp"/>
 
         <TextView
             android:id="@+id/areasize"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:text="Area-size"
-            android:textColor="#ffff"
+            android:text="Size on sq.feet"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="23dp"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="381dp"
+            android:layout_height="44dp"
+            android:text="Contract"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="76dp"
             android:text="Additional Description"
-            android:textColor="#ffff"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:id="@+id/contact"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="Contact"
-            android:textColor="#ffff"
-            android:textSize="22dp"/>
+            android:textColor="@color/black"
+            android:textSize="20dp"
+             />
 
         <TextView
             android:id="@+id/bergain"
             android:layout_width="match_parent"
             android:layout_height="34dp"
             android:text="Bergainable"
-            android:textColor="#ffff"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="22dp"/>
 
         <Button

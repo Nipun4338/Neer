@@ -58,11 +58,12 @@ public class search_resultsActivity extends AppCompatActivity {
         query = FirebaseDatabase.getInstance().getReference("users").child("ad");
         query.keepSynced(true);
 
+
+        /*Query firebaseSearchQuery1=myReference.orderByChild("rentCharge").startAt(search_minium).endAt(search_maximum);
+        firebaseSearchQuery1.addListenerForSingleValueEvent(valueEventListener);*/
+
         Query firebaseSearchQuery=myReference.orderByChild("x").equalTo(search);
         firebaseSearchQuery.addListenerForSingleValueEvent(valueEventListener);
-
-        Query firebaseSearchQuery1=myReference.orderByChild("rentCharge").startAt(search_minium).endAt(search_maximum);
-        firebaseSearchQuery1.addListenerForSingleValueEvent(valueEventListener);
     }
 
     ValueEventListener valueEventListener = new ValueEventListener() {
@@ -73,8 +74,14 @@ public class search_resultsActivity extends AppCompatActivity {
                 for (DataSnapshot datasnapshot : snapshot.getChildren()) {
                     //Toast.makeText(search_resultsActivity.this, "13", Toast.LENGTH_SHORT).show();
                     Blog1 blog1 = datasnapshot.getValue(Blog1.class);
-                    blog1List.add(blog1);
-                    Toast.makeText(search_resultsActivity.this, "14", Toast.LENGTH_SHORT).show();
+                    int y=Integer.parseInt(blog1.getRentCharge());
+                    int y1=Integer.parseInt(search_minium);
+                    int y2=Integer.parseInt(search_maximum);
+                    if(y>=y1 && y<=y2)
+                    {
+                        blog1List.add(blog1);
+                    }
+                    //Toast.makeText(search_resultsActivity.this, "14", Toast.LENGTH_SHORT).show();
                 }
                 adapter=new searchAdapter(search_resultsActivity.this, blog1List);
                 myView.setAdapter(adapter);

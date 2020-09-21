@@ -16,7 +16,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="650dp"
-        android:background="@color/black"
+        android:background="@drawable/adredcopiedew"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -48,64 +48,70 @@
         <EditText
             android:id="@+id/rent_money1"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
+            android:layout_height="wrap_content"
             android:hint="Rent"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="25dp" />
 
         <EditText
             android:id="@+id/dist1"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:hint="District"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/areaName1"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:hint="Area"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/areasize1"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:hint="Area-size"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:layout_height="wrap_content"
+            android:hint="Size on square fits"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/description1"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:hint="Additional Description"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="17dp" />
 
         <EditText
             android:id="@+id/contact1"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:hint="Contact"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20dp" />
 
         <EditText
             android:id="@+id/bergain1"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:hint="Bergainable"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hint"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20dp" />
 
         <Button

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        example1=findViewById(R.id.imageView10);
+        //example1=findViewById(R.id.imageView10);
 
         final Handler handler = new Handler();
         final Runnable timer = new Runnable() {
@@ -51,13 +51,13 @@ public class MainActivity extends AppCompatActivity {
         handler.removeCallbacks(timer);
         handler.postDelayed(timer, ONE_SECOND);
 
-        example1.setOnClickListener(new View.OnClickListener() {
+        /*example1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 handler.removeCallbacks(timer);
                 startActivity(new Intent(MainActivity.this,aboutusActivity.class));
             }
-        });
+        });*/
 
     }
 

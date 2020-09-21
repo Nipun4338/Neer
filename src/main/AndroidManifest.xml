@@ -66,7 +66,7 @@
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".profileActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar" />
+             />
         <activity
             android:name=".loginActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />

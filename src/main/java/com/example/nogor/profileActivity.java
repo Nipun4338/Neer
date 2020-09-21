@@ -2,11 +2,14 @@ package com.example.nogor;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.MenuItemCompat;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -61,20 +64,6 @@ public class profileActivity extends AppCompatActivity {
         firebaseUser=firebaseAuth.getCurrentUser();
         RootRef = FirebaseDatabase.getInstance().getReference("users");
 
-        settings=findViewById(R.id.settings);
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), updateprofileActivity.class);
-                intent.putExtra("name", user_name);
-                intent.putExtra("address", user_address);
-                intent.putExtra("email", user_email);
-                intent.putExtra("phone", user_phone);
-                intent.putExtra("password", user_password);
-                intent.putExtra("dp", user_dp);
-                startActivity(intent);
-            }
-        });
         name.setText("Welcome "+user_name+"!");
         RootRef2 = FirebaseDatabase.getInstance().getReference("users");
         RootRef2.child(user_phone)
@@ -101,18 +90,6 @@ public class profileActivity extends AppCompatActivity {
 
                     }
                 });
-
-
-        signout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent=new Intent(profileActivity.this, loginActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-            }
-        });
 
         postad.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -287,6 +264,49 @@ public class profileActivity extends AppCompatActivity {
         Glide.with(profileActivity.this)
                 .load(image)
                 .into(dp);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu1, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id=item.getItemId();
+        if(id==R.id.action_settings1)
+        {
+            Intent intent = new Intent(getApplicationContext(), updateprofileActivity.class);
+            intent.putExtra("name", user_name);
+            intent.putExtra("address", user_address);
+            intent.putExtra("email", user_email);
+            intent.putExtra("phone", user_phone);
+            intent.putExtra("password", user_password);
+            intent.putExtra("dp", user_dp);
+            startActivity(intent);
+        }
+        if(id==R.id.signout)
+        {
+            FirebaseAuth.getInstance().signOut();
+            Intent intent=new Intent(profileActivity.this, loginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void perform_action(View v)
+    {
+        ImageView tv= (ImageView) findViewById(R.id.imageView10);
+
+        //alter text of textview widget
+        //tv.setText("About Us");
+
+        //assign the textview forecolor
+        //tv.setTextColor(Color.GREEN);
+        startActivity(new Intent(profileActivity.this,aboutusActivity.class));
     }
 
 }
