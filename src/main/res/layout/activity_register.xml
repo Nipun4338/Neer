@@ -68,6 +68,7 @@
         android:hint="Password"
         android:singleLine="true"
         android:textAlignment="textStart"
+        android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         android:textColorHint="@color/hint"
@@ -114,20 +115,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.728" />
 
-    <Button
-        android:id="@+id/back3"
-        android:layout_width="85dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="332dp"
-        android:background="@drawable/rounded_button"
-        android:text="Back"
-        android:textColor="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
 
     <ImageView
         android:id="@+id/imageView8"
