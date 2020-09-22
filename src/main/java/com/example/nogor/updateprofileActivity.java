@@ -77,10 +77,10 @@ public class updateprofileActivity extends AppCompatActivity {
             setimage(pic);
         }
 
-        name2.setText(name);
-        email2.setText(email);
-        address2.setText(address);
-        password2.setText(password);
+        name1.setHint(name);
+        email1.setHint(email);
+        address1.setHint(address);
+        password1.setHint(password);
         storageReference = FirebaseStorage.getInstance().getReference("users/"+phone+"/pic");
 
         reference= FirebaseDatabase.getInstance().getReference("users");
@@ -209,7 +209,7 @@ public class updateprofileActivity extends AppCompatActivity {
         if(name1.getText().toString()!=null && name1.getText().toString().length()>0 && !name.equals(name1.getText().toString()))
         {
             reference.child(phone).child("name").setValue(name1.getText().toString());
-            name2.setText(name1.getText().toString());
+            //name2.setText(name1.getText().toString());
             name=name1.getText().toString();
             sum++;
         }
@@ -219,7 +219,7 @@ public class updateprofileActivity extends AppCompatActivity {
         if(email1.getText().toString()!=null && email1.getText().toString().length()>0 && !email.equals(email1.getText().toString()))
         {
             reference.child(phone).child("email").setValue(email1.getText().toString());
-            email2.setText(email1.getText().toString());
+            //email2.setText(email1.getText().toString());
             email=email1.getText().toString();
             sum++;
         }
@@ -229,7 +229,7 @@ public class updateprofileActivity extends AppCompatActivity {
         if(address1.getText().toString()!=null && address1.getText().toString().length()>0 && !address.equals(address1.getText().toString()))
         {
             reference.child(phone).child("address").setValue(address1.getText().toString());
-            address2.setText(address1.getText().toString());
+            //address2.setText(address1.getText().toString());
             address=address1.getText().toString();
             sum++;
             //return true;
@@ -240,7 +240,7 @@ public class updateprofileActivity extends AppCompatActivity {
         if(password1.getText().toString()!=null && password1.getText().toString().length()>0 && !password.equals(password1.getText().toString()))
         {
             reference.child(phone).child("password").setValue(password1.getText().toString());
-            password2.setText(password1.getText().toString());
+            //password2.setText(password1.getText().toString());
             password=password1.getText().toString();
             sum++;
             //return true;
