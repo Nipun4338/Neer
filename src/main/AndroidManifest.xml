@@ -22,13 +22,18 @@
         <activity
             android:name=".search_resultsActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
-        <activity android:name=".searchActivity" />
-        <activity android:name=".check_all_messages" />
-        <activity android:name=".message_Activity" />
+        <activity android:name=".searchActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <activity android:name=".check_all_messages"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            />
+        <activity android:name=".message_Activity"
+            />
         <activity
             android:name=".edit_my_ad_Activity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
-        <activity android:name=".all_ads_Activity" />
+        <activity android:name=".all_ads_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
         <activity
             android:name=".forgotten_change_passwordActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
@@ -65,7 +70,8 @@
         <activity
             android:name=".verifyActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
-        <activity android:name=".profileActivity" />
+        <activity android:name=".profileActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
         <activity
             android:name=".loginActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />

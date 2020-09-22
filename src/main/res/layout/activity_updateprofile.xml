@@ -7,31 +7,32 @@
     android:background="@drawable/skyline_copied"
     tools:context=".updateprofileActivity">
 
+
     <TextView
         android:layout_width="248dp"
         android:layout_height="110dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="605dp"
+        android:layout_marginStart="16dp"
         android:text="Profile"
         android:textColor="@color/white"
         android:textSize="85dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/dp"
-        android:layout_width="101dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="284dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_width="107dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="288dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
         app:srcCompat="@drawable/profile" />
 
     <LinearLayout

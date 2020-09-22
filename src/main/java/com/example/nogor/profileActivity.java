@@ -33,6 +33,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class profileActivity extends AppCompatActivity {
 
     ImageView settings, dp;
@@ -261,9 +263,10 @@ public class profileActivity extends AppCompatActivity {
     public void setimage(String image)
     {
         //Picasso.with(ctx).load(image).into(image1);
+        CircleImageView image1=(CircleImageView) findViewById(R.id.dp);
         Glide.with(profileActivity.this)
                 .load(image)
-                .into(dp);
+                .into(image1);
     }
 
     public boolean onCreateOptionsMenu(Menu menu)
