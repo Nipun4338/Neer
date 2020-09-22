@@ -15,7 +15,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="720dp"
         android:background="@drawable/tryok"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,13 +27,13 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-        <ImageView
-            android:id="@+id/post_image1"
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:background="@drawable/d"
-            android:onClick="perform_action"
-            android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/post_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/d"
+                android:onClick="perform_action"
+                android:scaleType="fitXY" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -49,13 +49,13 @@
             android:id="@+id/rent_money1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans_black"
             android:hint="Rent"
             android:singleLine="true"
-            android:fontFamily="@font/alegreya_sans_black"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/dist1"
@@ -74,6 +74,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Area"
+            android:fontFamily="@font/alegreya_sans_black"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/detailedareaname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detailed Area"
             android:fontFamily="@font/alegreya_sans_black"
             android:textStyle="bold"
             android:textColor="@color/black"

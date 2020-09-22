@@ -40,8 +40,8 @@ import java.util.HashMap;
 
 public class edit_my_ad_Activity extends AppCompatActivity {
     String key, user_phone;
-    String areaName2, areasize2, rent_money2, dist2, description2, contact2, bergain2, post_image2="", result1="";
-    EditText rent_money1, dist1, areaName1, areasize1, description1, contact1, bergain1;
+    String areaName2, areasize2, rent_money2, dist2, description2, contact2, bergain2, post_image2="", result1="", detailedarea2;
+    EditText rent_money1, dist1, areaName1, areasize1, description1, contact1, bergain1, detailedarea1;
     String user_address, user_name, user_email, user_password, user_dp;
     Button edit_ad1, delete_ad;
     private final int PICK_IMAGE_REQUEST = 71;
@@ -80,6 +80,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         edit_ad1=findViewById(R.id.edit_ad1);
         tv=findViewById(R.id.post_image1);
         delete_ad=findViewById(R.id.delete_ad);
+        detailedarea1=findViewById(R.id.detailedareaname1);
 
 
         final DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
@@ -92,6 +93,8 @@ public class edit_my_ad_Activity extends AppCompatActivity {
                 //if (snapshot.hasChild(phone)) {
                 areaName2 = snapshot.child("areaName").getValue(String.class);
                 areaName1.setHint("Area: "+areaName2);
+                detailedarea2 = snapshot.child("detailedareaName").getValue(String.class);
+                detailedarea1.setHint("Area: "+detailedarea2);
                 rent_money2 = snapshot.child("rentCharge").getValue(String.class);
                 rent_money1.setHint(rent_money2);
                 areasize2 = snapshot.child("sizeOfhouse").getValue(String.class);
@@ -254,6 +257,7 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         iscontactchanged();
         isbergainchanged();
         isdistchanged();
+        isdetailednamechanged();
         sum+=flag;
         if(sum>0)
         {
@@ -282,6 +286,16 @@ public class edit_my_ad_Activity extends AppCompatActivity {
             reference.child("ad").child(key).child("areaName").setValue(areaName1.getText().toString());
             reference.child(user_phone).child("ad").child(key).child("areaName1").setValue(areaName1.getText().toString().toLowerCase());
             reference.child("ad").child(key).child("areaName1").setValue(areaName1.getText().toString().toLowerCase());
+            sum++;
+        }
+    }
+
+    private void isdetailednamechanged()
+    {
+        if(detailedarea1.getText().toString()!=null && detailedarea1.getText().toString().length()>0 && !detailedarea2.equals(detailedarea1.getText().toString()))
+        {
+            reference.child(user_phone).child("ad").child(key).child("detailedareaName").setValue(detailedarea1.getText().toString());
+            reference.child("ad").child(key).child("detailedareaName").setValue(detailedarea1.getText().toString());
             sum++;
         }
     }
@@ -342,6 +356,8 @@ public class edit_my_ad_Activity extends AppCompatActivity {
         {
             reference.child(user_phone).child("ad").child(key).child("district").setValue(dist1.getText().toString());
             reference.child("ad").child(key).child("district").setValue(dist1.getText().toString());
+            reference.child(user_phone).child("ad").child(key).child("district1").setValue(dist1.getText().toString());
+            reference.child("ad").child(key).child("district1").setValue(dist1.getText().toString());
             sum++;
         }
     }
