@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
                     String emailFromDB = snapshot.child("email").getValue(String.class);
                     String passwordFromDB = snapshot.child("password").getValue(String.class);
                     String dpFromDB = snapshot.child("dp").getValue(String.class);
-                    Toast.makeText(MainActivity.this, "14", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(getApplicationContext(), profileActivity.class);
                     intent.putExtra("name", nameFromDB);

@@ -5,8 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     app:cardCornerRadius="12dp"
-    android:layout_margin="7dp"
-    android:elevation="90dp"
+    app:cardElevation="3dp"
+    android:layout_margin="5dp"
+    android:foreground="?selectableItemBackground"
+    app:contentPadding="4dp"
+    app:cardBackgroundColor="#81C784"
     >
 
     <LinearLayout
@@ -25,8 +28,10 @@
         <TextView
             android:id="@+id/rent_money"
             android:layout_width="match_parent"
+            android:fontFamily="@font/alegreya_sans_black"
             android:layout_height="44dp"
             android:text="Money"
+            android:background="#AED6F1 "
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="30dp" />
@@ -36,54 +41,67 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="District"
+            android:background="#85C1E9 "
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="23dp"/>
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/areaNamex"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="Area"
+            android:background="#5DADE2 "
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="23dp"/>
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/areasize"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:text="Size on sq.feet"
+            android:background="#3498DB"
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="23dp"/>
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/contact"
-            android:layout_width="381dp"
-            android:layout_height="44dp"
-            android:text="Contract"
-            android:textColor="@color/black"
-            android:textSize="22dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/description"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:text="Additional Description"
+            android:layout_height="40dp"
+            android:text="Contract"
+            android:background="#2E86C1 "
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textColor="@color/black"
             android:textSize="20dp"
-             />
+            android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/bergain"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
+            android:layout_height="40dp"
             android:text="Bergainable"
+            android:background="#2874A6 "
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="22dp"/>
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#21618C"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:text="Additional Description"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
 
         <Button
             android:id="@+id/edit_ad"

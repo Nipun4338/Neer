@@ -99,7 +99,6 @@ public class loginActivity extends AppCompatActivity {
                         String phoneFromDB = snapshot.child("users").child(phone).child("phone").getValue(String.class);
                         if (phoneFromDB == null || phoneFromDB.length() <= 0)
                         {
-                            Toast.makeText(loginActivity.this, "13", Toast.LENGTH_SHORT).show();
                             Intent intent1 = new Intent(loginActivity.this, registerActivity.class);
                             startActivity(intent1);
                             finish();

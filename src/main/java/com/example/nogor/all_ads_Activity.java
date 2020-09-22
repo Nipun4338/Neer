@@ -308,7 +308,7 @@ public class all_ads_Activity extends AppCompatActivity {
         public void setdistrictname(String district)
         {
             TextView dist=mview.findViewById(R.id.dist);
-            dist.setText("District:- "+district);
+            dist.setText("District:  "+district);
         }
         public void setrent(String rent)
         {
@@ -318,27 +318,27 @@ public class all_ads_Activity extends AppCompatActivity {
         public void setadditionaldetails(String details)
         {
             TextView additionaldetails=mview.findViewById(R.id.description);
-            additionaldetails.setText("Details:- "+details);
+            additionaldetails.setText("Details:   "+details);
         }
         public void setcontact(String contact)
         {
             TextView contact1=mview.findViewById(R.id.contact);
-            contact1.setText("Contact:- "+contact);
+            contact1.setText("Contact:   "+contact);
         }
         public void setbergain(String bergain)
         {
             TextView bergain1=mview.findViewById(R.id.bergain);
-            bergain1.setText("Bergain:- "+bergain);
+            bergain1.setText("Bergain:   "+bergain);
         }
         public void setsize(String size)
         {
             TextView size1=mview.findViewById(R.id.areasize);
-            size1.setText("Area size:- "+size);
+            size1.setText("Area size: "+size);
         }
         public void setareaname(String detailedarea, String areaname1)
         {
             TextView areaname=mview.findViewById(R.id.areaNamex);
-            areaname.setText("Area Name:- "+detailedarea+" , "+areaname1);
+            areaname.setText("Area Name: "+detailedarea+" , "+areaname1);
         }
         public void setimage(Context ctx, String image)
         {
@@ -388,4 +388,16 @@ public class all_ads_Activity extends AppCompatActivity {
         user_password = intent.getStringExtra("password");
         user_dp = intent.getStringExtra("dp");
     }
+
+    /*public void perform_action(View v)
+    {
+        ImageView tv= (ImageView) findViewById(R.id.pos);
+
+        //alter text of textview widget
+        //tv.setText("About Us");
+
+        //assign the textview forecolor
+        //tv.setTextColor(Color.GREEN);
+        startActivity(new Intent(profileActivity.this,aboutusActivity.class));
+    }*/
 }

@@ -5,14 +5,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     app:cardCornerRadius="12dp"
-    android:layout_margin="7dp"
-    android:elevation="90dp"
+    app:cardElevation="3dp"
+    android:layout_margin="5dp"
+    android:foreground="?selectableItemBackground"
+    app:contentPadding="4dp"
+    app:cardBackgroundColor="#81C784"
     >
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="670dp"
         android:background="#CCD1D1"
         android:orientation="vertical">
 
@@ -27,64 +30,78 @@
             android:id="@+id/rent_money"
             android:layout_width="match_parent"
             android:layout_height="44dp"
+            android:fontFamily="@font/alegreya_sans_black"
             android:text="Money"
+            android:background="#FAD7A0 "
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/dist"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="District"
+            android:background="#F8C471"
             android:textStyle="bold"
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textColor="@color/black"
-            android:textSize="23dp"/>
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/areaNamex"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="Area"
+            android:background="#F5B041"
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="23dp"/>
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/areasize"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
+            android:background="#F39C12 "
+            android:fontFamily="@font/alegreya_sans_bold"
             android:text="Size on sq feet"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="23dp"/>
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/contact"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:text="Contract"
+            android:background="#E68910 "
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="22dp"/>
-
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Additional Description"
             android:textColor="@color/black"
             android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/bergain"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:text="Bergainable"
+            android:background="#F39C12"
+            android:fontFamily="@font/alegreya_sans_bold"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="22dp"
+            android:textSize="20dp"
             />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F5B041"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:text="Additional Description"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
 
 
         <Button
