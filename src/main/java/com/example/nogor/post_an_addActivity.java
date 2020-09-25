@@ -103,16 +103,16 @@ public class post_an_addActivity extends AppCompatActivity {
                       areaname.requestFocus();
                       return;
                   }
-                  if(sizeOfhouse.length()==0)
-                  {
-                      sizeofhouse.setError("Field cannot be empty");
-                      sizeofhouse.requestFocus();
-                      return;
-                  }
                   if(detailedareaName.length()==0)
                   {
                       detailedareaname.setError("Field cannot be empty");
                       detailedareaname.requestFocus();
+                      return;
+                  }
+                  if(sizeOfhouse.length()==0)
+                  {
+                      sizeofhouse.setError("Field cannot be empty");
+                      sizeofhouse.requestFocus();
                       return;
                   }
                   if(rentCharge.length()==0)
