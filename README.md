@@ -8,3 +8,16 @@ user can create his own account, upload information about his residential
 facilities for rent by adding images and details.And for the people who are
 searching for better residential facilities can easily find their desired place
 and contact with the owner.
+
+## Software Specifications
+
+Android Minimum Version: API 19(or Android 4.4-kitkat)
+Android Maximum Version: API 30(or Android 10.0+-R)
+Database: Firebase
+
+## Project Features
+
+1. User:
+(a) User has to create an account and then login.
+(b) User can update their own profile by adding personal information and uploading photos.
+(c) Users can add, edit and delete the advertisement of their choice.
