@@ -1,4 +1,7 @@
 ### Neer
+Project made by me for Software Development III course.<br>
+2nd Year, 2nd Semester
+
 ## Project Description
 
 The project is based on digital house rent advertisement. The main focus
