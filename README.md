@@ -11,8 +11,8 @@ and contact with the owner.
 
 ## Software Specifications
 
-Android Minimum Version: API 19(or Android 4.4-kitkat)
-Android Maximum Version: API 30(or Android 10.0+-R)
+Android Minimum Version: API 19(or Android 4.4-kitkat)<br>
+Android Maximum Version: API 30(or Android 10.0+-R)<br>
 Database: Firebase
 
 ## Project Features
