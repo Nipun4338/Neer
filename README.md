@@ -25,8 +25,6 @@ Database: Firebase
 (b) User can update their own profile by adding personal information and uploading photos.<br>
 (c) Users can add, edit and delete the advertisement of their choice.
 
-![](user.gif)
-
 2. Advertisement:<br>
 (a) Users can add any type of information of the residence including
 images which will have two interfaces : Public ad interface,
