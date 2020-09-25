@@ -37,6 +37,8 @@ of an advertisement.<br>
 messages sent from various user for an specific advertisement.<br>
 (c) User and owner both can see last online status of each other.
 
+![](Chat_2.gif)
+
 4. Query:<br>
 (a) User can see advertisement according to their desired search
 filter.
