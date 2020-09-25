@@ -22,7 +22,7 @@ Database: Firebase
 (b) User can update their own profile by adding personal information and uploading photos.<br>
 (c) Users can add, edit and delete the advertisement of their choice.
 
-2. Advertisement:
+2. Advertisement:<br>
 (a) Users can add any type of information of the residence including
 images which will have two interfaces : Public ad interface,
 Private ad interface.<br>
@@ -30,13 +30,13 @@ Private ad interface.<br>
 (c) Private ad interface : This section is only visible for the account
 owner.
 
-3. Live Chat:
+3. Live Chat:<br>
 (a) Using public ad interface anyone can send message to the owner
 of an advertisement.<br>
 (b) Using private ad interface advertisement owner can see all the
 messages sent from various user for an specific advertisement.<br>
 (c) User and owner both can see last online status of each other.
 
-4. Query:
+4. Query:<br>
 (a) User can see advertisement according to their desired search
 filter.
