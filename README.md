@@ -19,5 +19,5 @@ Database: Firebase
 
 1. User:<br>
 (a) User has to create an account and then login.<br>
-(b) User can update their own profile by adding personal information and uploading photos.
+(b) User can update their own profile by adding personal information and uploading photos.<br>
 (c) Users can add, edit and delete the advertisement of their choice.
