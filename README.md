@@ -54,4 +54,4 @@ filter.<br>
 ![](Query.gif)
 
 
-Video Link: https://youtu.be/kt32FWxfvVc
+For more visual description: https://youtu.be/kt32FWxfvVc
