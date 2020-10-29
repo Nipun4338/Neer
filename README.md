@@ -1,5 +1,5 @@
 ### Neer
-Project made by me for Software Development III course.<br>
+Project made for Software Development III course.<br>
 2nd Year, 2nd Semester
 
 ## Project Description
