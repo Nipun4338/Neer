@@ -1,0 +1,540 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.nogor"
+4    android:versionCode="1"
+5    android:versionName="2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:6:22-77
+13
+14    <supports-screens
+14-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:8:5-12:40
+15        android:largeScreens="true"
+15-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:9:9-36
+16        android:normalScreens="true"
+16-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:10:9-37
+17        android:smallScreens="true"
+17-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:11:9-36
+18        android:xlargeScreens="true" />
+18-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:12:9-37
+19
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:12:5-79
+20-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:12:22-76
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:24:5-68
+21-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:24:22-65
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
+23
+24    <application
+24-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:14:5-94:19
+25        android:name="androidx.multidex.MultiDexApplication"
+26        android:allowBackup="true"
+26-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:15:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\71a649a18db048a533a3b2353514428a\core-1.3.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@drawable/ic_home"
+29-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:16:9-41
+30        android:label="@string/app_name"
+30-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:17:9-41
+31        android:roundIcon="@drawable/ic_home"
+31-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:18:9-46
+32        android:supportsRtl="true"
+32-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:19:9-35
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:20:9-40
+34        <activity android:name="com.example.nogor.show_ImageActivity" />
+34-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:21:9-65
+34-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:21:19-53
+35        <activity
+35-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:22:9-24:69
+36            android:name="com.example.nogor.search_resultsActivity"
+36-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:23:13-51
+37            android:theme="@style/Theme.Design.Light.NoActionBar" />
+37-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:24:13-66
+38        <activity
+38-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:25:9-26:76
+39            android:name="com.example.nogor.searchActivity"
+39-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:25:19-49
+40            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+40-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:26:13-74
+41        <activity
+41-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:27:9-29:15
+42            android:name="com.example.nogor.check_all_messages"
+42-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:27:19-53
+43            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+43-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:28:13-74
+44        <activity android:name="com.example.nogor.message_Activity" />
+44-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:30:9-31:15
+44-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:30:19-51
+45        <activity
+45-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:32:9-34:69
+46            android:name="com.example.nogor.edit_my_ad_Activity"
+46-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:33:13-48
+47            android:theme="@style/Theme.Design.Light.NoActionBar" />
+47-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:34:13-66
+48        <activity
+48-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:35:9-36:76
+49            android:name="com.example.nogor.all_ads_Activity"
+49-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:35:19-51
+50            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+50-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:36:13-74
+51        <activity
+51-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:37:9-39:69
+52            android:name="com.example.nogor.forgotten_change_passwordActivity"
+52-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:38:13-62
+53            android:theme="@style/Theme.Design.Light.NoActionBar" />
+53-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:39:13-66
+54        <activity
+54-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:40:9-42:69
+55            android:name="com.example.nogor.forgotten_verifyActivity"
+55-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:41:13-53
+56            android:theme="@style/Theme.Design.Light.NoActionBar" />
+56-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:42:13-66
+57        <activity
+57-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:43:9-45:69
+58            android:name="com.example.nogor.forgotten_passwordActivity"
+58-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:44:13-55
+59            android:theme="@style/Theme.Design.Light.NoActionBar" />
+59-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:45:13-66
+60        <activity
+60-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:46:9-48:69
+61            android:name="com.example.nogor.my_ads_Activity"
+61-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:47:13-44
+62            android:theme="@style/Theme.Design.Light.NoActionBar" />
+62-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:48:13-66
+63        <activity
+63-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:49:9-51:69
+64            android:name="com.example.nogor.post_an_add_2Activity"
+64-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:50:13-50
+65            android:theme="@style/Theme.Design.Light.NoActionBar" />
+65-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:51:13-66
+66        <activity
+66-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:52:9-54:69
+67            android:name="com.example.nogor.post_an_addActivity"
+67-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:53:13-48
+68            android:theme="@style/Theme.Design.Light.NoActionBar" />
+68-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:54:13-66
+69        <activity
+69-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:55:9-57:69
+70            android:name="com.example.nogor.look_for_officeActivity"
+70-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:56:13-52
+71            android:theme="@style/Theme.Design.Light.NoActionBar" />
+71-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:57:13-66
+72        <activity
+72-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:58:9-60:69
+73            android:name="com.example.nogor.look_for_houseActivity"
+73-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:59:13-51
+74            android:theme="@style/Theme.Design.Light.NoActionBar" />
+74-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:60:13-66
+75        <activity
+75-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:61:9-63:69
+76            android:name="com.example.nogor.updateprofileActivity"
+76-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:62:13-50
+77            android:theme="@style/Theme.Design.Light.NoActionBar" />
+77-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:63:13-66
+78        <activity
+78-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:64:9-66:69
+79            android:name="com.example.nogor.aboutusActivity"
+79-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:65:13-44
+80            android:theme="@style/Theme.Design.Light.NoActionBar" />
+80-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:66:13-66
+81        <activity
+81-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:67:9-69:69
+82            android:name="com.example.nogor.registerActivity"
+82-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:68:13-45
+83            android:theme="@style/Theme.Design.Light.NoActionBar" />
+83-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:69:13-66
+84        <activity
+84-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:70:9-72:69
+85            android:name="com.example.nogor.verifyActivity"
+85-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:71:13-43
+86            android:theme="@style/Theme.Design.Light.NoActionBar" />
+86-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:72:13-66
+87        <activity
+87-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:73:9-74:76
+88            android:name="com.example.nogor.profileActivity"
+88-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:73:19-50
+89            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+89-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:74:13-74
+90        <activity
+90-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:75:9-77:69
+91            android:name="com.example.nogor.loginActivity"
+91-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:76:13-42
+92            android:theme="@style/Theme.Design.Light.NoActionBar" />
+92-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:77:13-66
+93        <activity
+93-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:78:9-80:69
+94            android:name="com.example.nogor.signActivity"
+94-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:79:13-41
+95            android:theme="@style/Theme.Design.Light.NoActionBar" />
+95-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:80:13-66
+96        <activity
+96-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:81:9-89:20
+97            android:name="com.example.nogor.MainActivity"
+97-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:82:13-41
+98            android:theme="@style/Theme.Design.Light.NoActionBar" >
+98-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:83:13-66
+99            <intent-filter>
+99-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:84:13-88:29
+100                <action android:name="android.intent.action.MAIN" />
+100-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:85:17-69
+100-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:85:25-66
+101
+102                <category android:name="android.intent.category.LAUNCHER" />
+102-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:87:17-77
+102-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:87:27-74
+103            </intent-filter>
+104        </activity>
+105
+106        <meta-data
+106-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:91:9-93:57
+107            android:name="preloaded_fonts"
+107-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:92:13-43
+108            android:resource="@array/preloaded_fonts" />
+108-->C:\Users\nipun\AndroidStudioProjects\nogor version 22.1.muta\nogor\app\src\main\AndroidManifest.xml:93:13-54
+109        <meta-data
+109-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:16:9-18:69
+110            android:name="com.google.android.gms.version"
+110-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:17:13-58
+111            android:value="@integer/google_play_services_version" />
+111-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:18:13-66
+112        <meta-data
+112-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:19:9-21:63
+113            android:name="com.facebook.sdk.ApplicationId"
+113-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:20:13-58
+114            android:value="@string/facebook_application_id" />
+114-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:21:13-60
+115
+116        <activity
+116-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:23:9-27:61
+117            android:name="com.firebase.ui.auth.KickoffActivity"
+117-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:24:13-64
+118            android:exported="false"
+118-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:25:13-37
+119            android:label=""
+119-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:26:13-29
+120            android:theme="@style/FirebaseUI.Transparent" />
+120-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:27:13-58
+121        <activity
+121-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:28:9-32:61
+122            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+122-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:29:13-76
+123            android:exported="false"
+123-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:30:13-37
+124            android:label=""
+124-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:31:13-29
+125            android:theme="@style/FirebaseUI.Transparent" />
+125-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:32:13-58
+126        <activity
+126-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:33:9-37:61
+127            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+127-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:34:13-86
+128            android:exported="false"
+128-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:35:13-37
+129            android:label=""
+129-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:36:13-29
+130            android:theme="@style/FirebaseUI.Transparent" />
+130-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:37:13-58
+131        <activity
+131-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:38:9-42:58
+132            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+132-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:39:13-81
+133            android:exported="false"
+133-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:40:13-37
+134            android:label="@string/fui_title_recover_password_activity"
+134-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:41:13-72
+135            android:windowSoftInputMode="adjustResize" />
+135-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:42:13-55
+136        <activity
+136-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:43:9-47:58
+137            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+137-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:44:13-71
+138            android:exported="false"
+138-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:45:13-37
+139            android:label="@string/fui_sign_in_default"
+139-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:46:13-56
+140            android:windowSoftInputMode="adjustResize" />
+140-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:47:13-55
+141        <activity
+141-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:48:9-52:77
+142            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+142-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:49:13-71
+143            android:exported="false"
+143-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:50:13-37
+144            android:label="@string/fui_sign_in_with_phone_number"
+144-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:51:13-66
+145            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+145-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:52:13-74
+146        <activity
+146-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:53:9-57:58
+147            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+147-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:54:13-76
+148            android:exported="false"
+148-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:55:13-37
+149            android:label="@string/fui_title_welcome_back_idp_prompt"
+149-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:56:13-70
+150            android:windowSoftInputMode="adjustResize" />
+150-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:57:13-55
+151        <activity
+151-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:58:9-62:58
+152            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+152-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:59:13-83
+153            android:exported="false"
+153-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:60:13-37
+154            android:label="@string/fui_title_welcome_back_password_prompt"
+154-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:61:13-75
+155            android:windowSoftInputMode="adjustResize" />
+155-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:62:13-55
+156        <activity
+156-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:63:9-67:58
+157            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+157-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:64:13-84
+158            android:exported="false"
+158-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:65:13-37
+159            android:label="@string/fui_title_welcome_back_password_prompt"
+159-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:66:13-75
+160            android:windowSoftInputMode="adjustResize" />
+160-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:67:13-55
+161        <activity
+161-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:68:9-73:58
+162            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+162-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:69:13-82
+163            android:exported="false"
+163-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:70:13-37
+164            android:label=""
+164-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:71:13-29
+165            android:theme="@style/FirebaseUI.Transparent"
+165-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:72:13-58
+166            android:windowSoftInputMode="adjustResize" />
+166-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:73:13-55
+167        <activity
+167-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:74:9-78:58
+168            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+168-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:75:13-88
+169            android:exported="false"
+169-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:76:13-37
+170            android:label="@string/fui_sign_in_default"
+170-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:77:13-56
+171            android:windowSoftInputMode="adjustResize" />
+171-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:78:13-55
+172        <activity
+172-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:79:9-82:65
+173            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+173-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:80:13-80
+174            android:exported="false"
+174-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:81:13-37
+175            android:label="@string/fui_default_toolbar_title" />
+175-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:82:13-62
+176        <activity
+176-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:83:9-87:48
+177            android:name="com.facebook.FacebookActivity"
+177-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:84:13-57
+178            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+178-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:85:13-96
+179            android:label="@string/app_name" />
+179-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:86:13-45
+180        <activity
+180-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:88:9-100:20
+181            android:name="com.facebook.CustomTabActivity"
+181-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:89:13-58
+182            android:exported="true" >
+182-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:90:13-36
+183            <intent-filter>
+183-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:92:13-99:29
+184                <action android:name="android.intent.action.VIEW" />
+184-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:93:17-69
+184-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:93:25-66
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:95:17-76
+186-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:95:27-73
+187                <category android:name="android.intent.category.BROWSABLE" />
+187-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:96:17-78
+187-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:96:27-75
+188
+189                <data android:scheme="@string/facebook_login_protocol_scheme" />
+189-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:98:17-81
+189-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:98:23-78
+190            </intent-filter>
+191        </activity>
+192
+193        <provider
+193-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:102:9-106:38
+194            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+194-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:103:13-79
+195            android:authorities="com.example.nogor.authuiinitprovider"
+195-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:104:13-70
+196            android:exported="false"
+196-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:105:13-37
+197            android:initOrder="90" />
+197-->[com.firebaseui:firebase-ui-auth:6.2.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\7c8ad5d318f2a9a933fa908131eeee93\jetified-firebase-ui-auth-6.2.1\AndroidManifest.xml:106:13-35
+198
+199        <activity
+199-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+200            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+200-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+201            android:excludeFromRecents="true"
+201-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+202            android:exported="true"
+202-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+203            android:launchMode="singleTask"
+203-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+204            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+204-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+205            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+205-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+206
+207        <service
+207-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+208            android:name="com.google.firebase.components.ComponentDiscoveryService"
+208-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
+209            android:directBootAware="true"
+209-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+210            android:exported="false" >
+210-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
+211            <meta-data
+211-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+212                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+212-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+213                android:value="com.google.firebase.components.ComponentRegistrar" />
+213-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\16a303518ddb9c4f6d04d81a3a04d0b3\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+214            <meta-data
+214-->[com.google.firebase:firebase-database:19.3.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+215                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+215-->[com.google.firebase:firebase-database:19.3.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+216                android:value="com.google.firebase.components.ComponentRegistrar" />
+216-->[com.google.firebase:firebase-database:19.3.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\227f78203b0b12a1d5db88f7e5b8d4d8\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+217            <meta-data
+217-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+218                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+218-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+219                android:value="com.google.firebase.components.ComponentRegistrar" />
+219-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\2bae4ed60042b5247600f13f46496519\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+220            <meta-data
+220-->[com.google.firebase:firebase-firestore:21.4.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\92f9dc59a7674ce085dbee56f0c7dd03\jetified-firebase-firestore-21.4.1\AndroidManifest.xml:20:13-22:85
+221                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+221-->[com.google.firebase:firebase-firestore:21.4.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\92f9dc59a7674ce085dbee56f0c7dd03\jetified-firebase-firestore-21.4.1\AndroidManifest.xml:21:17-111
+222                android:value="com.google.firebase.components.ComponentRegistrar" />
+222-->[com.google.firebase:firebase-firestore:21.4.1] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\92f9dc59a7674ce085dbee56f0c7dd03\jetified-firebase-firestore-21.4.1\AndroidManifest.xml:22:17-82
+223            <meta-data
+223-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
+224                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+224-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
+225                android:value="com.google.firebase.components.ComponentRegistrar" />
+225-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\35f10b9aa3282e0c4ce3ae644ab33b75\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
+226            <meta-data
+226-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+227                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+227-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+228                android:value="com.google.firebase.components.ComponentRegistrar" />
+228-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\4d2d6e18a23e71677122246f9e56e667\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+229        </service>
+230
+231        <provider
+231-->[com.squareup.picasso:picasso:2.71828] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\dfaf1441f6246fb3d21105997cb12b6b\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+232            android:name="com.squareup.picasso.PicassoProvider"
+232-->[com.squareup.picasso:picasso:2.71828] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\dfaf1441f6246fb3d21105997cb12b6b\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+233            android:authorities="com.example.nogor.com.squareup.picasso"
+233-->[com.squareup.picasso:picasso:2.71828] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\dfaf1441f6246fb3d21105997cb12b6b\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+234            android:exported="false" />
+234-->[com.squareup.picasso:picasso:2.71828] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\dfaf1441f6246fb3d21105997cb12b6b\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+235
+236        <activity
+236-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+237            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+237-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+238            android:excludeFromRecents="true"
+238-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+239            android:exported="false"
+239-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+240            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+240-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+241        <!--
+242            Service handling Google Sign-In user revocation. For apps that do not integrate with
+243            Google Sign-In, this service will never be started.
+244        -->
+245        <service
+245-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+246            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+246-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+247            android:exported="true"
+247-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+248            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+248-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\acd0ebdfe8b3c5d4dadcb67458810e2d\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+249
+250        <activity
+250-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+251            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+251-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+252            android:exported="false"
+252-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+253            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+253-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\73f874509465423414ab7604a318e1cc\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+254
+255        <provider
+255-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+256            android:name="com.google.firebase.provider.FirebaseInitProvider"
+256-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+257            android:authorities="com.example.nogor.firebaseinitprovider"
+257-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+258            android:exported="false"
+258-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+259            android:initOrder="100" />
+259-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\d5ae2f905dca277d72c2333071856016\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+260
+261        <receiver
+261-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
+262            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+262-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
+263            android:enabled="true"
+263-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
+264            android:exported="false" >
+264-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
+265        </receiver>
+266
+267        <service
+267-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
+268            android:name="com.google.android.gms.measurement.AppMeasurementService"
+268-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
+269            android:enabled="true"
+269-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
+270            android:exported="false" />
+270-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
+271        <service
+271-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
+272            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+272-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
+273            android:enabled="true"
+273-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
+274            android:exported="false"
+274-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
+275            android:permission="android.permission.BIND_JOB_SERVICE" />
+275-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\58a41218ea342964128b5404cfbbd677\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
+276
+277        <provider
+277-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+278            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+278-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+279            android:authorities="com.example.nogor.lifecycle-process"
+279-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+280            android:exported="false"
+280-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+281            android:multiprocess="true" />
+281-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\nipun\.gradle\caches\transforms-2\files-2.1\eb86d70faba0f24fa8225d854e9aff80\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+282    </application>
+283
+284</manifest>
