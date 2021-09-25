@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_my_ad_Activity"
+    android:background="@color/hint"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="7dp"
+    android:elevation="90dp"
+    android:fontFamily="@font/montserrat"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:background="@drawable/tryok"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/post_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/d"
+                android:onClick="perform_action"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Tap to change Image"
+                android:fontFamily="@font/montserrat"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/rent_money1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent"
+            android:fontFamily="@font/montserrat"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dist1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="District"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/areaName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/detailedareaname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detailed Area"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/areasize1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Size on square fits"
+            android:singleLine="true"
+            android:inputType="number"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Description"
+            android:singleLine="false"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/contact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/bergain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bergainable"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/edit_ad1"
+            android:layout_width="408dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button"
+            android:text="Update Ad"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/delete_ad"
+            android:layout_width="408dp"
+
+            android:layout_height="45dp"
+            android:background="#FF0000"
+            android:text="Delete Ad"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

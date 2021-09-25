@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "314055207756",
+    "firebase_url": "https://nogor-da7ac.firebaseio.com",
+    "project_id": "nogor-da7ac",
+    "storage_bucket": "nogor-da7ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314055207756:android:fa19411459f67581387de9",
+        "android_client_info": {
+          "package_name": "com.example.nogor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314055207756-1argqicesegr45p8bia774aak7uienqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nogor",
+            "certificate_hash": "7eac883bc176893f613a3a96607b290bf2397213"
+          }
+        },
+        {
+          "client_id": "314055207756-6age6tbqulqu8q7itpuielr0qqe4jreb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKKI7hnec5eH0Gi79vMxdtdOkgFIRt9IA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314055207756-6age6tbqulqu8q7itpuielr0qqe4jreb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
