@@ -12,9 +12,9 @@
       "filters": [],
       "properties": [],
       "versionCode": 1,
-      "versionName": "2.0",
+      "versionName": "2.1",
       "enabled": true,
-      "outputFile": "app-debug.apk"
+      "outputFile": "Neer-debug.apk"
     }
   ]
 }

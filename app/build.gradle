@@ -10,8 +10,9 @@ android {
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
-        versionName "2.0"
+        versionName "2.1"
         multiDexEnabled true
+        setProperty("archivesBaseName", "Neer")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -27,6 +28,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.0-alpha06'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'

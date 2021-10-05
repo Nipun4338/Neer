@@ -22,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.Arrays;
 import java.util.List;
@@ -86,10 +87,11 @@ public class loginActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 // We have signed in the user or we have a new user
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                final String devicetoken= FirebaseInstanceId.getInstance().getToken();
                 Log.d(TAG, "onActivityResult: " + user.toString());
                 //Checking for User (New/Old)
                 final String phone = user.getUid();
-                DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+                final DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
                 rootRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
@@ -106,6 +108,8 @@ public class loginActivity extends AppCompatActivity {
                         String emailFromDB = snapshot.child("users").child(phone).child("email").getValue(String.class);
                         String passwordFromDB = snapshot.child("users").child(phone).child("password").getValue(String.class);
                         String dpFromDB = snapshot.child("users").child(phone).child("dp").getValue(String.class);
+                        rootRef.child("users").child(phone).child("device_token")
+                                .setValue(devicetoken);
                         Intent intent = new Intent(getApplicationContext(), profileActivity.class);
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("address", addressFromDB);

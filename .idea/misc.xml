@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nipun/AndroidStudioProjects/Neer/app/src/main/res/layout/chat_layout.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/nipun/AndroidStudioProjects/Neer/app/src/main/res/layout/custom_chat_bar.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/nipun/AndroidStudioProjects/Neer/app/src/main/res/layout/custom_messages_layout.xml" value="0.2028985507246377" />
         <entry key="..\:/Users/nipun/AndroidStudioProjects/nogor version 22.1.muta/nogor/app/src/main/res/drawable-hdpi/button.xml" value="0.2203125" />
         <entry key="..\:/Users/nipun/AndroidStudioProjects/nogor version 22.1.muta/nogor/app/src/main/res/drawable-hdpi/button_enabled.xml" value="0.2203125" />
         <entry key="..\:/Users/nipun/AndroidStudioProjects/nogor version 22.1.muta/nogor/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2203125" />

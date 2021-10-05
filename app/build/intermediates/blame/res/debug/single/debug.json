@@ -1,666 +1,666 @@
 [
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_myad.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_myad.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_myad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_myad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_send_files.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\send_files.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_send.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_send.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_back.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-v24\\back.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_index.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\index.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_messages_layout.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\custom_messages_layout.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_my_ads.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_my_ads.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_send.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\ic_send.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_home_24.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_green_button.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\rounded_green_button.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_chat_bar.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\custom_chat_bar.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\d.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_send.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_allad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_allad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_myad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_myad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans_thin.ttf.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\font\\alegreya_sans_thin.ttf"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_allad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_allad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_show__image.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_show__image.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_my_ads.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_my_ads.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu1.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\menu\\menu1.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_message_.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_message_.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_redred.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\redred.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_send_files.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\send_files.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_pun.JPG.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\pun.JPG"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_layout.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\app_bar_layout.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_search.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_allad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_allad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_my_ads.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_my_ads.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_my_ad_.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_edit_my_ad_.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans.ttf.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\font\\alegreya_sans.ttf"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_search.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_send_files.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xxhdpi\\send_files.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_myad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_myad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ishmam_namestamp.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\ishmam_namestamp.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgotten_verify.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_forgotten_verify.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_search.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_search.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_my_ads.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_my_ads.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_black_white.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\black_white.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\d.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_allad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_allad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_message.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\send_message.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_send_message.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\send_message.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adredcopiedew.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\adredcopiedew.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_focused.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\button_focused.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans_black.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\font\\alegreya_sans_black.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_myad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_myad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_sign.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_back.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-v24\\back.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_muta.JPG.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\muta.JPG"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_home.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_home.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_an_add.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_post_an_add.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu1.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\menu\\menu1.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_send.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_allad.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_allad.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_blog_rows1_layout.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\blog_rows1_layout.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_button.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\bg_button.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_send.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_send.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgotten_password.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_forgotten_password.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_myad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_myad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_all_ads_.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_all_ads_.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rent_ofiice.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\rent_ofiice.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_ads_.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_my_ads_.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_aboutus.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_aboutus.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_myad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_myad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_pun_timestamp.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\pun_timestamp.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_chat_layout.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\chat_layout.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_chat_layout.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\chat_layout.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_check_all_messages.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_check_all_messages.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_index.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\index.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_button.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\rounded_button.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rent_ofiice.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\rent_ofiice.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adbackcopy.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\adbackcopy.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adred.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\adred.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_focused.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\button_focused.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\menu\\menu.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_myad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_myad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_an_add_2.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_post_an_add_2.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_action_search.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_action_search.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_send.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xxhdpi\\ic_send.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_send_message.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\send_message.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans_black.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\font\\alegreya_sans_black.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_button.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\rounded_button.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_allad.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_allad.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_disabled.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\button_disabled.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_look_for_house.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_look_for_house.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_send_message.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\send_message.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_home.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans_bold.ttf.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\font\\alegreya_sans_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_search.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mine_namestamp.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\mine_namestamp.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_home_24.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_red_white.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\red_white.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adredcopiedew.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\adredcopiedew.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_faruki.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\faruki.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_home_24.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_send_files.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\send_files.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_send_message.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\send_message.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_house_rental.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\house_rental.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_muta.JPG.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\muta.JPG"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logu.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\logu.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_allad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_allad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adredcopiedewew.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\adredcopiedewew.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_search.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_action_search.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_allad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_allad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_back1.gif.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-v24\\back1.gif"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_search.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_search.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_profile.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-v24\\profile.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_back1.gif.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-v24\\back1.gif"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adredcopiedewew.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\adredcopiedewew.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_redred.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\redred.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adredcopied.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\adredcopied.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_myad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_myad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_home_24.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_images.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\images.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_send_message.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\send_message.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adbackcopy.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\adbackcopy.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_home_24.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\font_montserrat.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\font\\montserrat.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_enabled.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\button_enabled.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_an_add_2.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_post_an_add_2.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_home.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_home.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_blog_row.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\blog_row.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_send_message.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\send_message.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_red_white.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\red_white.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_pressed.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\button_pressed.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_send_message.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-mdpi\\send_message.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_allad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_allad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_untitledpic.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\untitledpic.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_home.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_send.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_send.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_layout.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\app_bar_layout.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_my_ads.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_my_ads.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_planes.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\planes.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_enabled.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\button_enabled.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_home.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_home.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\font_new_font.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\font\\new_font.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\button.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_send_files.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\send_files.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_send.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-mdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_action_search.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_action_search.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_my_ads.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_my_ads.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_pun_timestamp.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\pun_timestamp.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_look_for_house.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_look_for_house.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_tryok.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\tryok.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_green_button.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\rounded_green_button.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_search.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_search.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_messages_layout.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\custom_messages_layout.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_send_files.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\send_files.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_search.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_action_search.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgotten_password.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_forgotten_password.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_allad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_allad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\font_new_font.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\font\\new_font.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_send_files.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\send_files.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_check_all_messages.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_check_all_messages.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_send.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_myad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_myad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans_thin.ttf.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\font\\alegreya_sans_thin.ttf"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_files.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\send_files.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_myad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_myad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgotten_verify.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_forgotten_verify.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_my_ads.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_my_ads.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_my_ads.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_my_ads.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_send_message.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xxhdpi\\send_message.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_allad.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_allad.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_chipa_logo.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\chipa_logo.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_send_message.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\send_message.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_faruki.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\faruki.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adred.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\adred.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_send.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\ic_send.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans.ttf.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\font\\alegreya_sans.ttf"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_send_files.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\send_files.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_send_files.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xxhdpi\\send_files.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_search.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logu.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\logu.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_my_ads.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_my_ads.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_home_24.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_background.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\background.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_my_ads.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_my_ads.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_tryok.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\tryok.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_untitledpic.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\untitledpic.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_message_.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_message_.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_action_search.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_action_search.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_my_ads.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_my_ads.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_send.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_send.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgotten_change_password.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_forgotten_change_password.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_send_files.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-mdpi\\send_files.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_verify.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_verify.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_profile.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_results.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_search_results.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_look_for_office.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_look_for_office.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_skyline.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\skyline.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_allad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_allad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_myad.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_myad.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_button.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\bg_button.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_myad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_myad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_search.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_search.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_black_white.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\black_white.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_disabled.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\button_disabled.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_all_ads_.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_all_ads_.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_background.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\background.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_results.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_search_results.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_images.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\images.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_profile.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-v24\\profile.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mine_namestamp.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\mine_namestamp.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_updateprofile.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_updateprofile.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_settings.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\settings.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\selector.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinnerlayout.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\spinnerlayout.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_updateprofile.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_updateprofile.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_home.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_home.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_blog_rows1_layout.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\blog_rows1_layout.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_house_rent.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\house_rent.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_house_rent.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\house_rent.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_about_us.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\about_us.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_skyline_copied.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\skyline_copied.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_pressed.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\button_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_skyline.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\skyline.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_skyline_copied.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\skyline_copied.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_ads_.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_my_ads_.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_pun.JPG.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\pun.JPG"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\font_montserrat.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\font\\montserrat.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_sign.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_blog_row.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\blog_row.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_files.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\send_files.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_home.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_about_us.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\about_us.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_chipa_logo.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\chipa_logo.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_home.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_send.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xxhdpi\\ic_send.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_home.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_home.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_home_24.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\font_alegreya_sans_bold.ttf.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\font\\alegreya_sans_bold.ttf"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_search.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_send.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-mdpi\\ic_send.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_send_files.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-mdpi\\send_files.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_myad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_myad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_look_for_office.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_look_for_office.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_send_files.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\send_files.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_my_ad_.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_edit_my_ad_.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_coped.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\coped.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adbackcopyfaded.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\adbackcopyfaded.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_message.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\send_message.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adredcopied.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\adredcopied.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_my_ads.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_my_ads.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_show__image.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_show__image.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_planes.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\planes.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgotten_change_password.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_forgotten_change_password.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_house_rental.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\house_rental.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_allad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_allad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_adbackcopyfaded.jpg.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\adbackcopyfaded.jpg"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_allad.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_allad.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable\\selector.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_aboutus.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_aboutus.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_send_message.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\send_message.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable_settings.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable\\settings.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_home.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_home.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinnerlayout.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\spinnerlayout.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_send_message.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xxhdpi\\send_message.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_action_search.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_action_search.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ishmam_namestamp.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\ishmam_namestamp.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_coped.jpg.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-xhdpi\\coped.jpg"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_my_ads.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_my_ads.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_send_message.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\drawable-mdpi\\send_message.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-hdpi\\button.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_verify.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_verify.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_chat_bar.xml.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\layout\\custom_chat_bar.xml"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_my_ads.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_my_ads.png"
     },
     {
-        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_post_an_add.xml.flat",
-        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\nogor version 22.1.muta\\nogor\\app\\src\\main\\res\\layout\\activity_post_an_add.xml"
+        "merged": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_send.png.flat",
+        "source": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\src\\main\\res\\drawable-xhdpi\\ic_send.png"
     }
 ]
