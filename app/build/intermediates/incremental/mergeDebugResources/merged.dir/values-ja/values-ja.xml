@@ -56,6 +56,7 @@
     <string name="crop_image_menu_flip_vertically">上下反転</string>
     <string name="crop_image_menu_rotate_left">左回転</string>
     <string name="crop_image_menu_rotate_right">右回転</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"その他"</string>
     <string name="fui_accessibility_logo">アプリのロゴ</string>
     <string name="fui_auto_verified">電話番号は自動的に確認されました</string>
     <string name="fui_button_text_save">保存</string>

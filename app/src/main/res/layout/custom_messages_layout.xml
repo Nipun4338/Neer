@@ -10,8 +10,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/profile"
-        />
+        android:src="@drawable/profile" />
 
     <TextView
         android:id="@+id/receiver_message_text"
@@ -21,13 +20,15 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/message_profile_image"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@drawable/button2"
         android:padding="10dp"
         android:text="receiver messages here"
         android:fontFamily="@font/montserrat"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
 
     <ImageView
@@ -35,16 +36,18 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_alignParentEnd="true"
-        android:layout_margin="5dp"
-        android:scaleType="centerCrop"
-        />
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop" />
 
     <ImageView
         android:id="@+id/message_receiver_image_view"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
@@ -60,9 +63,10 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
+        android:fontFamily="@font/montserrat"
         android:padding="10dp"
         android:text="sender messages"
-        android:fontFamily="@font/montserrat"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold" />

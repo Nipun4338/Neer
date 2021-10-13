@@ -1537,6 +1537,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button
+drawable button2
 drawable button_disabled
 drawable button_enabled
 drawable button_focused

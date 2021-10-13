@@ -61,6 +61,7 @@
     <string name="crop_image_menu_flip_vertically">اقلب رأسيًا</string>
     <string name="crop_image_menu_rotate_left">أدر عكس اتجاه عقارب الساعة</string>
     <string name="crop_image_menu_rotate_right">أدر</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"متنوعة"</string>
     <string name="fui_accessibility_logo">شعار التطبيق</string>
     <string name="fui_auto_verified">تمّ التحقّق تلقائيًا من رقم الهاتف.</string>
     <string name="fui_button_text_save">حفظ</string>

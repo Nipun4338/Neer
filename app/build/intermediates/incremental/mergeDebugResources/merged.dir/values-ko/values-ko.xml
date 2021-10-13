@@ -57,6 +57,7 @@
     <string name="crop_image_menu_flip_vertically">상하반전</string>
     <string name="crop_image_menu_rotate_left">반시계 회전</string>
     <string name="crop_image_menu_rotate_right">회전</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"기타"</string>
     <string name="fui_accessibility_logo">앱 로고</string>
     <string name="fui_auto_verified">전화번호가 자동으로 확인되었습니다.</string>
     <string name="fui_button_text_save">저장</string>

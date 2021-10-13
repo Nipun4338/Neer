@@ -56,6 +56,7 @@
     <string name="crop_image_menu_flip_vertically">Espelhar na vertifcal</string>
     <string name="crop_image_menu_rotate_left">Girar para a esquerda</string>
     <string name="crop_image_menu_rotate_right">Girar para a direita</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diversos"</string>
     <string name="fui_accessibility_logo">Logotipo do app</string>
     <string name="fui_auto_verified">O número de telefone foi verificado automaticamente</string>
     <string name="fui_button_text_save">Salvar</string>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+            "outputFile": "C:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\nipun\\.gradle\\caches\\transforms-2\\files-2.1\\248ad66f24d9f952000164a374febb85\\material-1.2.0-alpha06\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",

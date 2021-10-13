@@ -57,6 +57,7 @@
     <string name="crop_image_menu_flip_vertically">vertikal spiegeln</string>
     <string name="crop_image_menu_rotate_left">gegen den Uhrzeigersinn drehen</string>
     <string name="crop_image_menu_rotate_right">drehen</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Sonstiges"</string>
     <string name="fui_accessibility_logo">App-Logo</string>
     <string name="fui_auto_verified">Telefonnummer wurde automatisch bestätigt</string>
     <string name="fui_button_text_save">Speichern</string>

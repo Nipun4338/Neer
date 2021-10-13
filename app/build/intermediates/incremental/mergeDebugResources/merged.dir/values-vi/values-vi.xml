@@ -57,6 +57,7 @@
     <string name="crop_image_menu_flip_vertically">Lật theo chiều dọc</string>
     <string name="crop_image_menu_rotate_left">Xoay theo chiều kim đồng hồ</string>
     <string name="crop_image_menu_rotate_right">Xoay</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Khác"</string>
     <string name="fui_accessibility_logo">Biểu trưng ứng dụng</string>
     <string name="fui_auto_verified">Đã tự động xác minh số điện thoại</string>
     <string name="fui_button_text_save">Lưu</string>

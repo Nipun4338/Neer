@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
+            "outputFile": "C:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
             "map": [
                 {
                     "source": "C:\\Users\\nipun\\.gradle\\caches\\transforms-2\\files-2.1\\8714e72b8f1cefafc550a480a4cef245\\jetified-firebase-messaging-17.6.0\\res\\values-te\\values.xml",

@@ -57,6 +57,7 @@
     <string name="crop_image_menu_flip_vertically">Capovolgi verticalmente</string>
     <string name="crop_image_menu_rotate_left">Ruota in senso antiorario</string>
     <string name="crop_image_menu_rotate_right">Ruota</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Varie"</string>
     <string name="fui_accessibility_logo">Logo dell\'applicazione</string>
     <string name="fui_auto_verified">Numero di telefono verificato automaticamente</string>
     <string name="fui_button_text_save">Salva</string>

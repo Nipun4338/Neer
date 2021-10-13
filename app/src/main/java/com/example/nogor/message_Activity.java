@@ -1,23 +1,31 @@
 package com.example.nogor;
 
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.nfc.Tag;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +37,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.example.nogor.Notification.ApiClient;
+import com.example.nogor.Notification.NotificationApiService;
+import com.example.nogor.Notification.Result;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.github.library.bubbleview.BubbleTextView;
 import com.google.android.gms.tasks.Continuation;
@@ -44,10 +55,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -57,6 +75,15 @@ import java.util.List;
 import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.ResponseBody;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class message_Activity extends AppCompatActivity {
 
@@ -226,6 +253,31 @@ public class message_Activity extends AppCompatActivity {
 
                     }
                 });
+        /*NotificationRef.child(firebaseUser.getUid())
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot)
+                    {
+                        if (dataSnapshot.hasChild("state"))
+                        {
+                            String state = dataSnapshot.child("status").getValue().toString();
+
+                            if (!state.equals(null) && state.equals("unread"))
+                            {
+                                Toast.makeText(getApplicationContext(), "New Message!",
+                                        Toast.LENGTH_LONG).show();
+                                HashMap<String, String> chatnotification=new HashMap<>();
+                                chatnotification.put("status", "read");
+                                NotificationRef.child(firebaseUser.getUid())
+                                        .setValue(chatnotification);
+                            }
+                        }
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });*/
     }
 
 
@@ -514,13 +566,83 @@ public class message_Activity extends AppCompatActivity {
                 {
                     if (task.isSuccessful())
                     {
-                        HashMap<String, String> chatnotification=new HashMap<>();
-                        chatnotification.put("from", messageSenderID);
-                        chatnotification.put("to", messageReceiverID);
-                        NotificationRef.child(messageReceiverID).push()
-                                .setValue(chatnotification);
 
-                        Toast.makeText(message_Activity.this, "Message Sent Successfully...", Toast.LENGTH_SHORT).show();
+                        final String[] devicetoken = new String[1];
+
+                        final DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+                        rootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                            @RequiresApi(api = Build.VERSION_CODES.O)
+                            @Override
+                            public void onDataChange(DataSnapshot snapshot) {
+                                devicetoken[0] =snapshot.child("users").child(messageReceiverID).child("device_token")
+                                        .getValue(String.class);
+
+                                //JsonObject payload = buildNotificationPayload(devicetoken[0]);
+                                // send notification to receiver ID
+                                String device=devicetoken[0];
+
+                                //NotificationApiService api = new NotificationApiService();
+                                Result result=new Result();
+                                result.setTo(device);
+                                HashMap<String, String> chatnotification=new HashMap<>();
+                                chatnotification.put("from", messageSenderID);
+                                chatnotification.put("to", messageReceiverID);
+                                chatnotification.put("status", "unread");
+                                /*NotificationRef.child(messageReceiverID).push()
+                                        .setValue(chatnotification);*/
+                                NotificationRef.child(messageReceiverID)
+                                        .setValue(chatnotification);
+
+                                ApiClient.getApiService().sendNotification(result)
+                            .enqueue(new Callback<Result>() {
+                                            @RequiresApi(api = Build.VERSION_CODES.O)
+                                            @Override
+                                            public void onResponse(Call<Result> call, Response<Result> response) {
+                                                if (response.isSuccessful()) {
+                                                    //Result result1=response.body();
+                                                    //System.out.println(result1.getTo());
+                                                    //String fcm=response.body().getAsJsonObject("to").toString();
+                                                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                                                    String nowUser = user.getUid();
+                                                    if(messageReceiverID.equals(nowUser))
+                                                    {
+                                                        Toast.makeText(getApplicationContext(), "New Message!",
+                                                                Toast.LENGTH_LONG).show();
+
+                                                        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                                                        String CHANNEL_ID=messageReceiverID;
+                                                        NotificationChannel notificationChannel=new NotificationChannel(CHANNEL_ID,"name", NotificationManager.IMPORTANCE_HIGH);
+                                                        PendingIntent pendingIntent=PendingIntent.getActivity(getApplicationContext(),1,intent,0);
+                                                        Notification notification=new Notification.Builder(getApplicationContext(),CHANNEL_ID)
+                                                                .setContentText("Heading")
+                                                                .setContentTitle("You got a message!")
+                                                                .setContentIntent(pendingIntent)
+                                                                .addAction(android.R.drawable.sym_action_chat,"Message",pendingIntent)
+                                                                .setChannelId(CHANNEL_ID)
+                                                                .setSmallIcon(android.R.drawable.sym_action_chat)
+                                                                .build();
+
+                                                        NotificationManager notificationManager=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                                                        notificationManager.createNotificationChannel(notificationChannel);
+                                                        notificationManager.notify(1,notification);
+                                                    }
+                                                }
+                                            }
+                                            @Override public void onFailure(Call<Result> call, Throwable t) {
+                                            }
+
+                                        });
+
+                                Toast.makeText(message_Activity.this, "Message Sent Successfully...", Toast.LENGTH_SHORT).show();
+
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
                     }
                     else
                     {
@@ -532,6 +654,18 @@ public class message_Activity extends AppCompatActivity {
         }
     }
 
+    /*private JsonObject buildNotificationPayload(String id) {
+        // compose notification json payload
+        JsonObject payload = new JsonObject();
+        payload.addProperty("to", id);
+        // compose data payload here
+        /*JsonObject data = new JsonObject();
+        data.addProperty("title", "483");
+        data.addProperty("message", "483");
+        // add data payload
+        payload.add("data", data);
+        return payload;
+    }*/
 
     private void getuserdata() {
         Intent intent = getIntent();

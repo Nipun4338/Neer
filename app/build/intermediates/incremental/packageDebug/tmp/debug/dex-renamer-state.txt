@@ -1,10 +1,13 @@
-#Tue Oct 05 23:08:58 BDT 2021
-path.2=classes3.dex
-path.1=classes2.dex
+#Wed Oct 13 17:58:35 BDT 2021
+path.3=classes3.dex
+path.2=classes2.dex
+path.1=classes.dex
 path.0=classes.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
-base.1=C\:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
-base.0=C\:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.3=C\:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

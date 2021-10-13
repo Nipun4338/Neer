@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\nipun\\AndroidStudioProjects\\Neer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "C:\\Users\\nipun\\Documents\\GitHub\\Neer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
                     "source": "C:\\Users\\nipun\\.gradle\\caches\\transforms-2\\files-2.1\\2623c5ec6fa92d68e711128d15e9038d\\appcompat-1.2.0\\res\\values-ca\\values-ca.xml",
