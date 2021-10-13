@@ -1880,6 +1880,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
+id expanded_image
 id expanded_menu
 id extracontact
 id fade

@@ -31,6 +31,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -278,6 +280,7 @@ public class message_Activity extends AppCompatActivity {
 
                     }
                 });*/
+
     }
 
 
@@ -680,4 +683,5 @@ public class message_Activity extends AppCompatActivity {
         customer_name = intent.getStringExtra("customer_name");
         customer_dp = intent.getStringExtra("customer_dp");
     }
+
 }
